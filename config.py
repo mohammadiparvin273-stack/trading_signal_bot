@@ -27,12 +27,8 @@ EXCHANGES = {
         "secret": os.getenv("BINANCE_API_SECRET", ""),
         "id": "binance",
     },
-    "bybit": {
-        "api_key": os.getenv("BYBIT_API_KEY", ""),
-        "secret": os.getenv("BYBIT_API_SECRET", ""),
-        "id": "bybit",
-    },
 }
+
 
 # --- تحلیل ---
 SYMBOLS = _list("SYMBOLS", "BTC/USDT,ETH/USDT,SOL/USDT")

@@ -1,27 +1,29 @@
 """
-اندیکاتورهای پایه با pandas_ta (خالص پایتون، نیازی به کامپایل TA-Lib نیست)
+اندیکاتورهای پایه با کتابخونه‌ی "ta" (پایدار، خالص پایتون)
 """
 import pandas as pd
-import pandas_ta as ta
+from ta.trend import EMAIndicator, ADXIndicator, MACD
+from ta.momentum import RSIIndicator
+from ta.volatility import AverageTrueRange
 
 
 def add_all_indicators(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
-    df["ema50"] = ta.ema(df["close"], length=50)
-    df["ema200"] = ta.ema(df["close"], length=200)
-    df["ema20"] = ta.ema(df["close"], length=20)
 
-    adx = ta.adx(df["high"], df["low"], df["close"], length=14)
-    if adx is not None:
-        df["adx"] = adx["ADX_14"]
+    df["ema50"] = EMAIndicator(close=df["close"], window=50).ema_indicator()
+    df["ema200"] = EMAIndicator(close=df["close"], window=200).ema_indicator()
+    df["ema20"] = EMAIndicator(close=df["close"], window=20).ema_indicator()
 
-    df["rsi"] = ta.rsi(df["close"], length=14)
+    adx_ind = ADXIndicator(high=df["high"], low=df["low"], close=df["close"], window=14)
+    df["adx"] = adx_ind.adx()
 
-    macd = ta.macd(df["close"])
-    if macd is not None:
-        df["macd_hist"] = macd["MACDh_12_26_9"]
+    df["rsi"] = RSIIndicator(close=df["close"], window=14).rsi()
 
-    df["atr"] = ta.atr(df["high"], df["low"], df["close"], length=14)
+    macd_ind = MACD(close=df["close"])
+    df["macd_hist"] = macd_ind.macd_diff()
+
+    atr_ind = AverageTrueRange(high=df["high"], low=df["low"], close=df["close"], window=14)
+    df["atr"] = atr_ind.average_true_range()
     df["atr_sma"] = df["atr"].rolling(20).mean()
 
     df["vol_sma20"] = df["volume"].rolling(20).mean()

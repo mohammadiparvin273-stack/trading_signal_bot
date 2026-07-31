@@ -27,6 +27,8 @@ async def post_init(app):
 
     # اولین اسکن با کمی تاخیر بعد از بالا آمدن کامل
     sch.add_job(scheduler_module.scan_all, "date")
+    sch.add_job(scheduler_module.outcome_tracker.check_open_signals, "date")
+
 
     await telegram_notifier.send_plain("✅ ربات سیگنال‌یاب روشن شد و شروع به رصد بازار کرد.")
 

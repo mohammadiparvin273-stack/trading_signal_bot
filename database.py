@@ -124,6 +124,14 @@ def get_last_signal_for(symbol: str, timeframe: str, exchange: str):
         return cur.fetchone()
 
 
+def get_open_signals():
+    """سیگنال‌هایی که هنوز نتیجه‌شون (WIN/LOSS) مشخص نشده."""
+    with cursor() as cur:
+        cur.execute("SELECT * FROM signals WHERE outcome IS NULL ORDER BY created_at ASC")
+        return cur.fetchall()
+
+
+
 def get_recent_losses_sum(days: int) -> int:
     """تعداد ضررهای ثبت‌شده در N روز اخیر (برای فیلتر ریسک روزانه/هفتگی)."""
     since = datetime.now(timezone.utc) - timedelta(days=days)

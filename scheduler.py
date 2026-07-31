@@ -9,6 +9,7 @@ from apscheduler.triggers.interval import IntervalTrigger
 import config
 import pipeline
 import telegram_notifier
+import outcome_tracker
 
 log = logging.getLogger("scheduler")
 
@@ -35,7 +36,13 @@ def start_scheduler() -> AsyncIOScheduler:
         scan_all,
         trigger=IntervalTrigger(minutes=config.SCAN_INTERVAL_MINUTES),
         id="market_scan",
-        next_run_time=None,  # اولین اجرا با تاخیر کوتاه در main.py زمان‌بندی می‌شود
+        next_run_time=None,
+    )
+    scheduler.add_job(
+        outcome_tracker.check_open_signals,
+        trigger=IntervalTrigger(minutes=10),
+        id="outcome_check",
+        next_run_time=None,
     )
     scheduler.start()
     return scheduler

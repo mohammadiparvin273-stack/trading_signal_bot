@@ -25,7 +25,7 @@ def fetch_ohlcv_df(exchange_id: str, symbol: str, timeframe: str, limit: int = 3
     client = get_client(exchange_id)
     raw = client.fetch_ohlcv(symbol, timeframe=timeframe, limit=limit)
     df = pd.DataFrame(raw, columns=["timestamp", "open", "high", "low", "close", "volume"])
-    df["timestamp"] = pd.to_datetime(df["timestamp"], unit="ms")
+    df["timestamp"] = pd.to_datetime(df["timestamp"], unit="ms", utc=True)
     return df
 
 

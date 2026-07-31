@@ -16,7 +16,7 @@ def get_client(exchange_id: str):
             "apiKey": cfg["api_key"] or None,
             "secret": cfg["secret"] or None,
             "enableRateLimit": True,
-            "options": {"defaultType": "future"},  # دیتای فیوچرز برای OI/Funding
+            "options": {"defaultType": "spot"}, # دیتای فیوچرز برای OI/Funding
         })
     return _clients[exchange_id]
 

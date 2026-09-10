@@ -1,0 +1,19 @@
+### Core (required, all free/open-source)
+ccxt>=4.3.0            # public market data (no API key needed for OHLCV)
+pandas>=2.0.0
+numpy>=1.26.0
+scikit-learn>=1.4.0
+python-telegram-bot>=21.0
+PyYAML>=6.0
+python-dotenv>=1.0.0
+
+### Optional - gradient boosting ML (free, local)
+xgboost>=2.0.0
+lightgbm>=4.0.0
+
+### Optional - Deep Learning (free, local, CPU-friendly by default)
+# torch>=2.2.0
+
+### Optional - Local/free LLM sentiment (skip entirely if not needed)
+# llama-cpp-python
+# transformers

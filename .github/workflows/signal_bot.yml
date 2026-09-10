@@ -61,6 +61,6 @@ jobs:
         run: |
           git config user.name "signal-bot"
           git config user.email "signal-bot@users.noreply.github.com"
-          git add storage/signal_state.json storage/run_log.jsonl storage/history docs/index.html
+          git add storage/signal_state.json storage/run_log.jsonl storage/outcomes.json storage/history docs/index.html
           git diff --quiet --cached || git commit -m "Update signals, data & dashboard [skip ci]"
           git push

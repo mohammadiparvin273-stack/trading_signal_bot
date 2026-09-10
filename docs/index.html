@@ -31,7 +31,7 @@
 </head>
 <body>
   <h1>Trading Signal Bot - Dashboard</h1>
-  <div class="muted">آخرین بروزرسانی: 2026-09-10 22:04 UTC - این صفحه فقط تحلیل و سیگنال نشان می‌دهد؛ هیچ معامله‌ای اجرا نمی‌شود.</div>
+  <div class="muted">آخرین بروزرسانی: 2026-09-10 22:46 UTC - این صفحه فقط تحلیل و سیگنال نشان می‌دهد؛ هیچ معامله‌ای اجرا نمی‌شود.</div>
 
   <div class="section">
     <h2>عملکرد واقعی سیگنال‌های ارسال‌شده</h2>
@@ -96,10 +96,10 @@
   <div class="section">
     <h2>نتیجه‌ی هر سیگنال (چی شد؟)</h2>
     <div class="stats">
-      <div class="stat">تعداد کل اجراها<b>4</b></div>
+      <div class="stat">تعداد کل اجراها<b>6</b></div>
       <div class="stat">سیگنال ارسال‌شده<b>2</b></div>
       <div class="stat">BUY<b style="color:#16a34a">0</b></div>
-      <div class="stat">SELL<b style="color:#dc2626">3</b></div>
+      <div class="stat">SELL<b style="color:#dc2626">5</b></div>
       <div class="stat">NEUTRAL<b style="color:#9ca3af">1</b></div>
     </div>
     <div class="table-wrap">
@@ -141,6 +141,30 @@
         <th>Confidence</th><th>ML%</th><th>قیمت</th><th>ارسال شد؟</th><th>استراتژی</th><th>دلیل</th>
       </tr>
       
+        <tr>
+          <td>2026-09-10T22:46:10</td>
+          <td>ETH/USDT</td>
+          <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td>Trending Bear</td>
+          <td>66.9</td>
+          <td>14.5</td>
+          <td>2457.29</td>
+          <td>-</td>
+          <td class="muted">Trend Following</td>
+          <td class="muted">[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21.</td>
+        </tr>
+        <tr>
+          <td>2026-09-10T22:46:09</td>
+          <td>BTC/USDT</td>
+          <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td>Trending Bear</td>
+          <td>100.0</td>
+          <td>2.2</td>
+          <td>77124.3</td>
+          <td>-</td>
+          <td class="muted">Trend Following</td>
+          <td class="muted">[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21.</td>
+        </tr>
         <tr>
           <td>2026-09-10T22:04:09</td>
           <td>ETH/USDT</td>
@@ -197,10 +221,10 @@
   new Chart(document.getElementById('confChart'), {
     type: 'line',
     data: {
-      labels: ["2026-09-10T20:34", "2026-09-10T20:34", "2026-09-10T22:04", "2026-09-10T22:04"],
+      labels: ["2026-09-10T20:34", "2026-09-10T20:34", "2026-09-10T22:04", "2026-09-10T22:04", "2026-09-10T22:46", "2026-09-10T22:46"],
       datasets: [{
         label: 'Confidence %',
-        data: [100.0, 0.0, 100.0, 66.9],
+        data: [100.0, 0.0, 100.0, 66.9, 100.0, 66.9],
         borderColor: '#3b82f6',
         backgroundColor: 'rgba(59,130,246,0.15)',
         tension: 0.25,

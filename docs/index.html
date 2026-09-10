@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trading Signal Bot — Dashboard</title>
+<title>Trading Signal Bot - Dashboard</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <style>
   body { font-family: -apple-system, Tahoma, Arial, sans-serif; background:#0b0f14; color:#e5e7eb; margin:0; padding:24px; }
   h1 { font-size: 22px; margin-bottom:4px; }
+  h2 { font-size: 16px; }
   .muted { color:#9ca3af; font-size:13px; }
   .grid { display:flex; flex-wrap:wrap; gap:14px; margin:18px 0; }
   .card { background:#151a21; border:1px solid #262b33; border-radius:10px; padding:14px; width:260px; }
@@ -24,19 +25,30 @@
   th, td { padding:8px 10px; border-bottom:1px solid #262b33; text-align:right; }
   th { color:#9ca3af; font-weight:600; }
   .section { margin-top:36px; }
-  #chartWrap { background:#151a21; border:1px solid #262b33; border-radius:10px; padding:14px; max-width:900px; }
+  .chart-box { background:#151a21; border:1px solid #262b33; border-radius:10px; padding:14px; max-width:900px; }
+  .table-wrap { overflow-x:auto; }
 </style>
 </head>
 <body>
-  <h1>📊 Trading Signal Bot — Dashboard</h1>
-  <div class="muted">آخرین بروزرسانی: 2026-09-10 20:34 UTC — این صفحه فقط تحلیل و سیگنال نشان می‌دهد؛ هیچ معامله‌ای اجرا نمی‌شود.</div>
+  <h1>Trading Signal Bot - Dashboard</h1>
+  <div class="muted">آخرین بروزرسانی: 2026-09-10 22:04 UTC - این صفحه فقط تحلیل و سیگنال نشان می‌دهد؛ هیچ معامله‌ای اجرا نمی‌شود.</div>
 
-  <div class="stats">
-    <div class="stat">تعداد کل اجراها<b>2</b></div>
-    <div class="stat">سیگنال ارسال‌شده<b>1</b></div>
-    <div class="stat">BUY<b style="color:#16a34a">0</b></div>
-    <div class="stat">SELL<b style="color:#dc2626">1</b></div>
-    <div class="stat">NEUTRAL<b style="color:#9ca3af">1</b></div>
+  <div class="section">
+    <h2>عملکرد واقعی سیگنال‌های ارسال‌شده</h2>
+    <div class="stats">
+      <div class="stat">کل سیگنال<b>1</b></div>
+      <div class="stat">در حال انتظار<b style="color:#3b82f6">1</b></div>
+      <div class="stat">به هدف رسیده<b style="color:#16a34a">0</b></div>
+      <div class="stat">حد ضرر خورده<b style="color:#dc2626">0</b></div>
+      <div class="stat">منقضی‌شده<b style="color:#a16207">0</b></div>
+      <div class="stat">Win Rate<b style="color:#dc2626">0.0%</b></div>
+      <div class="stat">میانگین سود/زیان<b style="color:#16a34a">0.0%</b></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>روند سود/زیان تجمعی (سیگنال‌های بسته‌شده)</h2>
+    <div class="chart-box"><canvas id="pnlChart" height="80"></canvas></div>
   </div>
 
   <div class="section">
@@ -50,36 +62,109 @@
           </div>
           <div class="card-body">
             <div>Regime: <b>Trending Bear</b></div>
+            <div>قیمت فعلی: <b>77124.3</b></div>
             <div>Confidence: <b>100.0%</b></div>
-            <div>Entry: 77244.0 – 77673.913108</div>
+            <div>Entry: 77244.0 - 77673.913108</div>
             <div>SL: 78159.703796 | TP1: 76683.331483</div>
             <div>R:R: 1:0.61</div>
-            <div class="muted">ID 084ecd39 · 2026-09-10T20:34:12.142304+00:00</div>
+            <div class="muted">ID 084ecd39 - 2026-09-10T20:34:12.142304+00:00</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <span class="asset">ETH/USDT</span>
+            <span class="tf">1h</span>
+            <span class="badge" style="background:#dc2626">SELL</span>
+          </div>
+          <div class="card-body">
+            <div>Regime: <b>Trending Bear</b></div>
+            <div>قیمت فعلی: <b>2457.29</b></div>
+            <div>Confidence: <b>66.9%</b></div>
+            <div>Entry: 2457.29 - 2461.511018</div>
+            <div>SL: 2478.62895 | TP1: 2435.95105</div>
+            <div>R:R: 1:1.0</div>
+            <div class="muted">ID ce8a95e1 - 2026-09-10T22:04:09.141336+00:00</div>
           </div>
         </div></div>
   </div>
 
   <div class="section">
     <h2>روند Confidence اخیر</h2>
-    <div id="chartWrap"><canvas id="confChart" height="90"></canvas></div>
+    <div class="chart-box"><canvas id="confChart" height="80"></canvas></div>
+  </div>
+
+  <div class="section">
+    <h2>نتیجه‌ی هر سیگنال (چی شد؟)</h2>
+    <div class="stats">
+      <div class="stat">تعداد کل اجراها<b>4</b></div>
+      <div class="stat">سیگنال ارسال‌شده<b>2</b></div>
+      <div class="stat">BUY<b style="color:#16a34a">0</b></div>
+      <div class="stat">SELL<b style="color:#dc2626">3</b></div>
+      <div class="stat">NEUTRAL<b style="color:#9ca3af">1</b></div>
+    </div>
+    <div class="table-wrap">
+    <table>
+      <tr>
+        <th>زمان شروع</th><th>نماد</th><th>جهت</th><th>Entry</th><th>SL</th><th>TP1</th>
+        <th>وضعیت</th><th>سود/زیان</th><th>زمان بسته‌شدن</th>
+      </tr>
+      
+        <tr>
+          <td>2026-09-10T22:04</td>
+          <td>ETH/USDT</td>
+          <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td>2457.29</td>
+          <td>2478.62895</td>
+          <td>2435.95105</td>
+          <td><span class="badge small" style="background:#3b82f6">در حال انتظار</span></td>
+          <td>-</td>
+          <td class="muted">-</td>
+        </tr>
+    </table>
+    </div>
   </div>
 
   <div class="section">
     <h2>حجم دیتای ذخیره‌شده برای آموزش مدل</h2>
     <table>
       <tr><th>فایل (نماد_تایم‌فریم)</th><th>تعداد کندل ذخیره‌شده</th></tr>
-      <tr><td>BTC_USDT_1h</td><td>721</td></tr><tr><td>ETH_USDT_1h</td><td>721</td></tr>
+      <tr><td>BTC_USDT_1h</td><td>723</td></tr><tr><td>ETH_USDT_1h</td><td>723</td></tr>
     </table>
   </div>
 
   <div class="section">
     <h2>تاریخچه‌ی کامل اجراها (آخرین 200 مورد)</h2>
+    <div class="table-wrap">
     <table>
       <tr>
         <th>زمان (UTC)</th><th>نماد</th><th>جهت</th><th>رژیم</th>
-        <th>Confidence</th><th>ML%</th><th>ارسال شد؟</th><th>دلیل</th>
+        <th>Confidence</th><th>ML%</th><th>قیمت</th><th>ارسال شد؟</th><th>استراتژی</th><th>دلیل</th>
       </tr>
       
+        <tr>
+          <td>2026-09-10T22:04:09</td>
+          <td>ETH/USDT</td>
+          <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td>Trending Bear</td>
+          <td>66.9</td>
+          <td>14.5</td>
+          <td>2457.29</td>
+          <td>بله</td>
+          <td class="muted">Trend Following</td>
+          <td class="muted">[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21.</td>
+        </tr>
+        <tr>
+          <td>2026-09-10T22:04:08</td>
+          <td>BTC/USDT</td>
+          <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td>Trending Bear</td>
+          <td>100.0</td>
+          <td>2.2</td>
+          <td>77124.3</td>
+          <td>-</td>
+          <td class="muted">Trend Following</td>
+          <td class="muted">[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21.</td>
+        </tr>
         <tr>
           <td>2026-09-10T20:34:13</td>
           <td>ETH/USDT</td>
@@ -87,7 +172,9 @@
           <td>Ranging</td>
           <td>0.0</td>
           <td>None</td>
-          <td>—</td>
+          <td></td>
+          <td>-</td>
+          <td class="muted"></td>
           <td class="muted">Confluence found but confidence only 10% (< 60% threshold).</td>
         </tr>
         <tr>
@@ -97,21 +184,23 @@
           <td>Trending Bear</td>
           <td>100.0</td>
           <td>3.8</td>
-          <td>✅</td>
+          <td></td>
+          <td>بله</td>
+          <td class="muted">Trend Following</td>
           <td class="muted">[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21.</td>
         </tr>
     </table>
+    </div>
   </div>
 
 <script>
-  const ctx = document.getElementById('confChart');
-  new Chart(ctx, {
+  new Chart(document.getElementById('confChart'), {
     type: 'line',
     data: {
-      labels: ["2026-09-10T20:34", "2026-09-10T20:34"],
+      labels: ["2026-09-10T20:34", "2026-09-10T20:34", "2026-09-10T22:04", "2026-09-10T22:04"],
       datasets: [{
         label: 'Confidence %',
-        data: [100.0, 0.0],
+        data: [100.0, 0.0, 100.0, 66.9],
         borderColor: '#3b82f6',
         backgroundColor: 'rgba(59,130,246,0.15)',
         tension: 0.25,
@@ -120,6 +209,24 @@
     },
     options: {
       scales: { y: { beginAtZero: true, max: 100 } },
+      plugins: { legend: { display: false } }
+    }
+  });
+
+  new Chart(document.getElementById('pnlChart'), {
+    type: 'line',
+    data: {
+      labels: [],
+      datasets: [{
+        label: 'Cumulative PnL %',
+        data: [],
+        borderColor: '#16a34a',
+        backgroundColor: 'rgba(22,163,74,0.15)',
+        tension: 0.15,
+        fill: true,
+      }]
+    },
+    options: {
       plugins: { legend: { display: false } }
     }
   });

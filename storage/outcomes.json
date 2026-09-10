@@ -1,0 +1,22 @@
+{
+  "__open_index__": {
+    "ETH/USDT::1h": "ce8a95e1"
+  },
+  "ce8a95e1": {
+    "signal_id": "ce8a95e1",
+    "asset": "ETH/USDT",
+    "timeframe": "1h",
+    "direction": "SELL",
+    "entry_ref": 2457.29,
+    "stop_loss": 2478.62895,
+    "take_profit_1": 2435.95105,
+    "take_profit_2": 2414.6121,
+    "confidence": 66.9,
+    "opened_at": "2026-09-10T22:04:09.141336+00:00",
+    "bars_open": 0,
+    "status": "OPEN",
+    "closed_at": null,
+    "exit_price": null,
+    "pnl_pct": null
+  }
+}

@@ -31,13 +31,13 @@
 </head>
 <body>
   <h1>Trading Signal Bot - Dashboard</h1>
-  <div class="muted">آخرین بروزرسانی: 2026-09-11 19:52 UTC - این صفحه فقط تحلیل و سیگنال نشان می‌دهد؛ هیچ معامله‌ای اجرا نمی‌شود.</div>
+  <div class="muted">آخرین بروزرسانی: 2026-09-11 22:03 UTC - این صفحه فقط تحلیل و سیگنال نشان می‌دهد؛ هیچ معامله‌ای اجرا نمی‌شود.</div>
 
   <div class="section">
     <h2>عملکرد واقعی سیگنال‌های ارسال‌شده</h2>
     <div class="stats">
-      <div class="stat">کل سیگنال<b>1</b></div>
-      <div class="stat">در حال انتظار<b style="color:#3b82f6">0</b></div>
+      <div class="stat">کل سیگنال<b>2</b></div>
+      <div class="stat">در حال انتظار<b style="color:#3b82f6">1</b></div>
       <div class="stat">به هدف رسیده<b style="color:#16a34a">1</b></div>
       <div class="stat">حد ضرر خورده<b style="color:#dc2626">0</b></div>
       <div class="stat">منقضی‌شده<b style="color:#a16207">0</b></div>
@@ -58,16 +58,16 @@
           <div class="card-header">
             <span class="asset">BTC/USDT</span>
             <span class="tf">1h</span>
-            <span class="badge" style="background:#6b7280">NEUTRAL</span>
+            <span class="badge" style="background:#dc2626">SELL</span>
           </div>
           <div class="card-body">
             <div>Regime: <b>Ranging</b></div>
-            <div>قیمت فعلی: <b>77365.6</b></div>
-            <div>Confidence: <b>0.0%</b></div>
-            <div>Entry: None - None</div>
-            <div>SL: None | TP1: None</div>
-            <div>R:R: 1:None</div>
-            <div class="muted">ID 13cbbeaa - 2026-09-11T13:49:03.866495+00:00</div>
+            <div>قیمت فعلی: <b>76973.9</b></div>
+            <div>Confidence: <b>68.0%</b></div>
+            <div>Entry: 76973.9 - 77412.183541</div>
+            <div>SL: 77762.866941 | TP1: 76184.933059</div>
+            <div>R:R: 1:1.0</div>
+            <div class="muted">ID c733bbd5 - 2026-09-11T22:03:16.694552+00:00</div>
           </div>
         </div>
         <div class="card">
@@ -78,7 +78,7 @@
           </div>
           <div class="card-body">
             <div>Regime: <b>Ranging</b></div>
-            <div>قیمت فعلی: <b>2542.4</b></div>
+            <div>قیمت فعلی: <b>2507.51</b></div>
             <div>Confidence: <b>0.0%</b></div>
             <div>Entry: None - None</div>
             <div>SL: None | TP1: None</div>
@@ -96,11 +96,11 @@
   <div class="section">
     <h2>نتیجه‌ی هر سیگنال (چی شد؟)</h2>
     <div class="stats">
-      <div class="stat">تعداد کل اجراها<b>18</b></div>
-      <div class="stat">سیگنال ارسال‌شده<b>6</b></div>
+      <div class="stat">تعداد کل اجراها<b>20</b></div>
+      <div class="stat">سیگنال ارسال‌شده<b>7</b></div>
       <div class="stat">BUY<b style="color:#16a34a">0</b></div>
-      <div class="stat">SELL<b style="color:#dc2626">9</b></div>
-      <div class="stat">NEUTRAL<b style="color:#9ca3af">9</b></div>
+      <div class="stat">SELL<b style="color:#dc2626">10</b></div>
+      <div class="stat">NEUTRAL<b style="color:#9ca3af">10</b></div>
     </div>
     <div class="table-wrap">
     <table>
@@ -109,6 +109,17 @@
         <th>وضعیت</th><th>سود/زیان</th><th>زمان بسته‌شدن</th>
       </tr>
       
+        <tr>
+          <td>2026-09-11T22:03</td>
+          <td>BTC/USDT</td>
+          <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td>76973.9</td>
+          <td>77762.866941</td>
+          <td>76184.933059</td>
+          <td><span class="badge small" style="background:#3b82f6">در حال انتظار</span></td>
+          <td>-</td>
+          <td class="muted">-</td>
+        </tr>
         <tr>
           <td>2026-09-10T22:04</td>
           <td>ETH/USDT</td>
@@ -128,7 +139,7 @@
     <h2>حجم دیتای ذخیره‌شده برای آموزش مدل</h2>
     <table>
       <tr><th>فایل (نماد_تایم‌فریم)</th><th>تعداد کندل ذخیره‌شده</th></tr>
-      <tr><td>BTC_USDT_1h</td><td>744</td></tr><tr><td>ETH_USDT_1h</td><td>744</td></tr>
+      <tr><td>BTC_USDT_1h</td><td>747</td></tr><tr><td>ETH_USDT_1h</td><td>747</td></tr>
     </table>
   </div>
 
@@ -141,6 +152,30 @@
         <th>Confidence</th><th>ML%</th><th>قیمت</th><th>ارسال شد؟</th><th>استراتژی</th><th>دلیل</th>
       </tr>
       
+        <tr>
+          <td>2026-09-11T22:03:17</td>
+          <td>ETH/USDT</td>
+          <td><span class="badge small" style="background:#6b7280">NEUTRAL</span></td>
+          <td>Trending Bull</td>
+          <td>0.0</td>
+          <td>None</td>
+          <td>2507.51</td>
+          <td>-</td>
+          <td class="muted"></td>
+          <td class="muted">No strategy found a valid setup on this bar.</td>
+        </tr>
+        <tr>
+          <td>2026-09-11T22:03:17</td>
+          <td>BTC/USDT</td>
+          <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td>Ranging</td>
+          <td>68.0</td>
+          <td>5.0</td>
+          <td>76973.9</td>
+          <td>بله</td>
+          <td class="muted">Trend Following, Momentum</td>
+          <td class="muted">[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21. | [Momentum] RSI at</td>
+        </tr>
         <tr>
           <td>2026-09-11T19:52:40</td>
           <td>ETH/USDT</td>
@@ -365,10 +400,10 @@
   new Chart(document.getElementById('confChart'), {
     type: 'line',
     data: {
-      labels: ["2026-09-10T20:34", "2026-09-10T20:34", "2026-09-10T22:04", "2026-09-10T22:04", "2026-09-10T22:46", "2026-09-10T22:46", "2026-09-11T00:38", "2026-09-11T00:38", "2026-09-11T05:13", "2026-09-11T05:13", "2026-09-11T09:40", "2026-09-11T09:40", "2026-09-11T13:49", "2026-09-11T13:49", "2026-09-11T17:22", "2026-09-11T17:22", "2026-09-11T19:52", "2026-09-11T19:52"],
+      labels: ["2026-09-10T20:34", "2026-09-10T20:34", "2026-09-10T22:04", "2026-09-10T22:04", "2026-09-10T22:46", "2026-09-10T22:46", "2026-09-11T00:38", "2026-09-11T00:38", "2026-09-11T05:13", "2026-09-11T05:13", "2026-09-11T09:40", "2026-09-11T09:40", "2026-09-11T13:49", "2026-09-11T13:49", "2026-09-11T17:22", "2026-09-11T17:22", "2026-09-11T19:52", "2026-09-11T19:52", "2026-09-11T22:03", "2026-09-11T22:03"],
       datasets: [{
         label: 'Confidence %',
-        data: [100.0, 0.0, 100.0, 66.9, 100.0, 66.9, 100.0, 69.9, 100.0, 0.0, 95.4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+        data: [100.0, 0.0, 100.0, 66.9, 100.0, 66.9, 100.0, 69.9, 100.0, 0.0, 95.4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 68.0, 0.0],
         borderColor: '#3b82f6',
         backgroundColor: 'rgba(59,130,246,0.15)',
         tension: 0.25,

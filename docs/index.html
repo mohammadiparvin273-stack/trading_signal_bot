@@ -31,7 +31,7 @@
 </head>
 <body>
   <h1>Trading Signal Bot - Dashboard</h1>
-  <div class="muted">آخرین بروزرسانی: 2026-09-11 05:13 UTC - این صفحه فقط تحلیل و سیگنال نشان می‌دهد؛ هیچ معامله‌ای اجرا نمی‌شود.</div>
+  <div class="muted">آخرین بروزرسانی: 2026-09-11 09:40 UTC - این صفحه فقط تحلیل و سیگنال نشان می‌دهد؛ هیچ معامله‌ای اجرا نمی‌شود.</div>
 
   <div class="section">
     <h2>عملکرد واقعی سیگنال‌های ارسال‌شده</h2>
@@ -62,7 +62,7 @@
           </div>
           <div class="card-body">
             <div>Regime: <b>Trending Bear</b></div>
-            <div>قیمت فعلی: <b>77093.0</b></div>
+            <div>قیمت فعلی: <b>76907.3</b></div>
             <div>Confidence: <b>100.0%</b></div>
             <div>Entry: 77093.0 - 77260.479141</div>
             <div>SL: 77794.075005 | TP1: 76614.756561</div>
@@ -78,7 +78,7 @@
           </div>
           <div class="card-body">
             <div>Regime: <b>Ranging</b></div>
-            <div>قیمت فعلی: <b>2458.41</b></div>
+            <div>قیمت فعلی: <b>2464.49</b></div>
             <div>Confidence: <b>0.0%</b></div>
             <div>Entry: None - None</div>
             <div>SL: None | TP1: None</div>
@@ -96,11 +96,11 @@
   <div class="section">
     <h2>نتیجه‌ی هر سیگنال (چی شد؟)</h2>
     <div class="stats">
-      <div class="stat">تعداد کل اجراها<b>10</b></div>
+      <div class="stat">تعداد کل اجراها<b>12</b></div>
       <div class="stat">سیگنال ارسال‌شده<b>5</b></div>
       <div class="stat">BUY<b style="color:#16a34a">0</b></div>
-      <div class="stat">SELL<b style="color:#dc2626">8</b></div>
-      <div class="stat">NEUTRAL<b style="color:#9ca3af">2</b></div>
+      <div class="stat">SELL<b style="color:#dc2626">9</b></div>
+      <div class="stat">NEUTRAL<b style="color:#9ca3af">3</b></div>
     </div>
     <div class="table-wrap">
     <table>
@@ -128,7 +128,7 @@
     <h2>حجم دیتای ذخیره‌شده برای آموزش مدل</h2>
     <table>
       <tr><th>فایل (نماد_تایم‌فریم)</th><th>تعداد کندل ذخیره‌شده</th></tr>
-      <tr><td>BTC_USDT_1h</td><td>730</td></tr><tr><td>ETH_USDT_1h</td><td>730</td></tr>
+      <tr><td>BTC_USDT_1h</td><td>734</td></tr><tr><td>ETH_USDT_1h</td><td>734</td></tr>
     </table>
   </div>
 
@@ -141,6 +141,30 @@
         <th>Confidence</th><th>ML%</th><th>قیمت</th><th>ارسال شد؟</th><th>استراتژی</th><th>دلیل</th>
       </tr>
       
+        <tr>
+          <td>2026-09-11T09:40:22</td>
+          <td>ETH/USDT</td>
+          <td><span class="badge small" style="background:#6b7280">NEUTRAL</span></td>
+          <td>Ranging</td>
+          <td>0.0</td>
+          <td>None</td>
+          <td>2464.49</td>
+          <td>-</td>
+          <td class="muted"></td>
+          <td class="muted">No strategy found a valid setup on this bar.</td>
+        </tr>
+        <tr>
+          <td>2026-09-11T09:40:21</td>
+          <td>BTC/USDT</td>
+          <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td>Trending Bear</td>
+          <td>95.4</td>
+          <td>9.8</td>
+          <td>76907.3</td>
+          <td>-</td>
+          <td class="muted">Trend Following</td>
+          <td class="muted">[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21.</td>
+        </tr>
         <tr>
           <td>2026-09-11T05:13:58</td>
           <td>ETH/USDT</td>
@@ -269,10 +293,10 @@
   new Chart(document.getElementById('confChart'), {
     type: 'line',
     data: {
-      labels: ["2026-09-10T20:34", "2026-09-10T20:34", "2026-09-10T22:04", "2026-09-10T22:04", "2026-09-10T22:46", "2026-09-10T22:46", "2026-09-11T00:38", "2026-09-11T00:38", "2026-09-11T05:13", "2026-09-11T05:13"],
+      labels: ["2026-09-10T20:34", "2026-09-10T20:34", "2026-09-10T22:04", "2026-09-10T22:04", "2026-09-10T22:46", "2026-09-10T22:46", "2026-09-11T00:38", "2026-09-11T00:38", "2026-09-11T05:13", "2026-09-11T05:13", "2026-09-11T09:40", "2026-09-11T09:40"],
       datasets: [{
         label: 'Confidence %',
-        data: [100.0, 0.0, 100.0, 66.9, 100.0, 66.9, 100.0, 69.9, 100.0, 0.0],
+        data: [100.0, 0.0, 100.0, 66.9, 100.0, 66.9, 100.0, 69.9, 100.0, 0.0, 95.4, 0.0],
         borderColor: '#3b82f6',
         backgroundColor: 'rgba(59,130,246,0.15)',
         tension: 0.25,

@@ -48,7 +48,7 @@
     "take_profit_2": 76499.799071,
     "confidence": 63.9,
     "opened_at": "2026-09-12T19:43:48.738795+00:00",
-    "bars_open": 2,
+    "bars_open": 4,
     "status": "OPEN",
     "closed_at": null,
     "exit_price": null,

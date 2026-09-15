@@ -1,44 +1,47 @@
 {
   "BTC/USDT::1h": {
-    "signal_id": "bd54d5bd",
-    "timestamp": "2026-09-15T16:54:22.501047+00:00",
+    "signal_id": "0d6d5563",
+    "timestamp": "2026-09-15T19:54:09.869676+00:00",
     "asset": "BTC/USDT",
     "timeframe": "1h",
     "regime": "Trending Bear",
     "direction": "SELL",
-    "entry_low": 76437.3,
-    "entry_high": 77188.574008,
-    "stop_loss": 77469.032831,
-    "take_profit_1": 75798.705943,
-    "take_profit_2": 75160.111886,
-    "risk_reward": 0.62,
-    "confidence": 93.0,
+    "entry_low": 75956.6,
+    "entry_high": 76962.60827,
+    "stop_loss": 77336.623094,
+    "take_profit_1": 75073.479194,
+    "take_profit_2": 74190.358387,
+    "risk_reward": 0.64,
+    "confidence": 93.7,
+    "strategies": [
+      "Trend Following",
+      "Momentum"
+    ],
+    "ml_probability": 4.2,
+    "llm_sentiment": "Bearish",
+    "reason": "[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21. | [Momentum] RSI at 35.2 (bearish zone, not oversold) with falling negative MACD histogram \u2014 downside momentum building.",
+    "invalidation": "Close back above EMA50 (77336.623094) or ADX dropping under 18."
+  },
+  "ETH/USDT::1h": {
+    "signal_id": "2c3dbd01",
+    "timestamp": "2026-09-15T19:54:10.785989+00:00",
+    "asset": "ETH/USDT",
+    "timeframe": "1h",
+    "regime": "Trending Bear",
+    "direction": "SELL",
+    "entry_low": 2410.22,
+    "entry_high": 2461.207285,
+    "stop_loss": 2485.434846,
+    "take_profit_1": 2369.920569,
+    "take_profit_2": 2329.621137,
+    "risk_reward": 0.54,
+    "confidence": 83.4,
     "strategies": [
       "Trend Following"
     ],
-    "ml_probability": 8.8,
+    "ml_probability": 3.6,
     "llm_sentiment": "Bearish",
     "reason": "[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21.",
-    "invalidation": "Close back above EMA50 (77469.032831) or ADX dropping under 18."
-  },
-  "ETH/USDT::1h": {
-    "signal_id": "d59d9a01",
-    "timestamp": "2026-09-14T05:10:51.111705+00:00",
-    "asset": "ETH/USDT",
-    "timeframe": "1h",
-    "regime": "Ranging",
-    "direction": "NEUTRAL",
-    "entry_low": null,
-    "entry_high": null,
-    "stop_loss": null,
-    "take_profit_1": null,
-    "take_profit_2": null,
-    "risk_reward": null,
-    "confidence": 0.0,
-    "strategies": [],
-    "ml_probability": null,
-    "llm_sentiment": "Neutral",
-    "reason": "Confluence found but confidence only 25% (< 60% threshold).",
-    "invalidation": ""
+    "invalidation": "Close back above EMA50 (2485.434846) or ADX dropping under 18."
   }
 }

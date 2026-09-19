@@ -61,6 +61,19 @@ jobs:
         run: |
           git config user.name "signal-bot"
           git config user.email "signal-bot@users.noreply.github.com"
-          git add storage/signal_state.json storage/run_log.jsonl storage/outcomes.json storage/history docs/index.html
+          # Add each path only if it actually exists. IMPORTANT: `git add`
+          # aborts its ENTIRE invocation (adding nothing at all) if even
+          # one listed path doesn't exist yet — e.g. storage/outcomes.json
+          # before the very first BUY/SELL signal is ever issued. Looping
+          # like this means one missing file can never block everything
+          # else from being saved.
+          for p in storage/signal_state.json storage/run_log.jsonl storage/outcomes.json storage/history docs/index.html; do
+            if [ -e "$p" ]; then
+              git add "$p"
+            fi
+          done
           git diff --quiet --cached || git commit -m "Update signals, data & dashboard [skip ci]"
+          # Guard against a rare race if two runs somehow overlap: rebase
+          # onto the latest remote state before pushing.
+          git pull --rebase origin main || true
           git push

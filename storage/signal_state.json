@@ -1,25 +1,23 @@
 {
   "BTC/USDT::1h": {
-    "signal_id": "b651908a",
-    "timestamp": "2026-09-19T01:48:50.353101+00:00",
+    "signal_id": "1ea28554",
+    "timestamp": "2026-09-19T06:45:32.995166+00:00",
     "asset": "BTC/USDT",
     "timeframe": "1h",
     "regime": "Trending Bull",
-    "direction": "BUY",
-    "entry_low": 80003.319067,
-    "entry_high": 81249.5,
-    "stop_loss": 78594.966933,
-    "take_profit_1": 81951.58472,
-    "take_profit_2": 82653.66944,
-    "risk_reward": 0.26,
-    "confidence": 61.8,
-    "strategies": [
-      "Trend Following"
-    ],
-    "ml_probability": 17.2,
-    "llm_sentiment": "Bullish",
-    "reason": "[Trend Following] EMA stack aligned bullish (9>21>50>200) with ADX confirming trend strength; price holding above EMA21.",
-    "invalidation": "Daily/period close back below EMA50 (78594.966933) or ADX dropping under 18."
+    "direction": "NEUTRAL",
+    "entry_low": null,
+    "entry_high": null,
+    "stop_loss": null,
+    "take_profit_1": null,
+    "take_profit_2": null,
+    "risk_reward": null,
+    "confidence": 0.0,
+    "strategies": [],
+    "ml_probability": null,
+    "llm_sentiment": "Neutral",
+    "reason": "Confluence found but confidence only 58% (< 60% threshold).",
+    "invalidation": ""
   },
   "ETH/USDT::1h": {
     "signal_id": "e6d27493",

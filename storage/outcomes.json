@@ -167,11 +167,11 @@
     "take_profit_2": 2669.011203,
     "confidence": 60.2,
     "opened_at": "2026-09-18T23:51:42.188041+00:00",
-    "bars_open": 7,
-    "status": "OPEN",
-    "closed_at": null,
-    "exit_price": null,
-    "pnl_pct": null
+    "bars_open": 12,
+    "status": "TP1_HIT",
+    "closed_at": "2026-09-19T08:00:00+00:00",
+    "exit_price": 2640.260602,
+    "pnl_pct": 1.101
   },
   "b651908a": {
     "signal_id": "b651908a",
@@ -184,7 +184,7 @@
     "take_profit_2": 82653.66944,
     "confidence": 61.8,
     "opened_at": "2026-09-19T01:48:50.353101+00:00",
-    "bars_open": 5,
+    "bars_open": 10,
     "status": "OPEN",
     "closed_at": null,
     "exit_price": null,

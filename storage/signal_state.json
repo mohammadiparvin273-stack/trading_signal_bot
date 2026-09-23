@@ -1,46 +1,48 @@
 {
   "BTC/USDT::1h": {
-    "signal_id": "593a12d5",
-    "timestamp": "2026-09-23T10:09:05.893677+00:00",
+    "signal_id": "68d0114f",
+    "timestamp": "2026-09-23T14:58:53.621462+00:00",
     "asset": "BTC/USDT",
     "timeframe": "1h",
-    "regime": "Trending Bull",
+    "regime": "Ranging",
     "direction": "SELL",
-    "entry_low": 85816.9,
-    "entry_high": 85946.790348,
-    "stop_loss": 86682.835652,
-    "take_profit_1": 85167.448261,
-    "take_profit_2": 84517.996522,
-    "risk_reward": 0.75,
-    "confidence": 61.2,
+    "entry_low": 84457.0,
+    "entry_high": 85294.6,
+    "stop_loss": 85857.800228,
+    "take_profit_1": 83330.599543,
+    "take_profit_2": 82204.199086,
+    "risk_reward": 0.8,
+    "confidence": 78.7,
     "strategies": [
-      "Momentum"
+      "Momentum",
+      "Breakout"
     ],
-    "ml_probability": 6.7,
-    "llm_sentiment": "Neutral",
-    "reason": "[Momentum] RSI at 44.2 (bearish zone, not oversold) with falling negative MACD histogram \u2014 downside momentum building.",
-    "invalidation": "MACD histogram turns positive or RSI rises above 50."
+    "ml_probability": 18.3,
+    "llm_sentiment": "Bullish",
+    "reason": "[Momentum] RSI at 30.2 (bearish zone, not oversold) with falling negative MACD histogram \u2014 downside momentum building. | [Breakout] Price broke below the 20-bar Donchian low (85294.600000) with above-average volume and expanding volatility bands.",
+    "invalidation": "Close back above the breakdown level (85294.600000)."
   },
   "ETH/USDT::1h": {
-    "signal_id": "fff68ce7",
-    "timestamp": "2026-09-23T10:09:06.965630+00:00",
+    "signal_id": "bc466001",
+    "timestamp": "2026-09-23T14:58:54.787610+00:00",
     "asset": "ETH/USDT",
     "timeframe": "1h",
-    "regime": "Trending Bull",
+    "regime": "Ranging",
     "direction": "SELL",
-    "entry_low": 2733.55,
-    "entry_high": 2738.756791,
-    "stop_loss": 2768.261938,
-    "take_profit_1": 2707.516046,
-    "take_profit_2": 2681.482093,
-    "risk_reward": 0.75,
-    "confidence": 63.8,
+    "entry_low": 2676.84,
+    "entry_high": 2708.02,
+    "stop_loss": 2729.362307,
+    "take_profit_1": 2634.155387,
+    "take_profit_2": 2591.470773,
+    "risk_reward": 0.81,
+    "confidence": 80.8,
     "strategies": [
-      "Momentum"
+      "Momentum",
+      "Breakout"
     ],
-    "ml_probability": 5.8,
-    "llm_sentiment": "Neutral",
-    "reason": "[Momentum] RSI at 42.8 (bearish zone, not oversold) with falling negative MACD histogram \u2014 downside momentum building.",
-    "invalidation": "MACD histogram turns positive or RSI rises above 50."
+    "ml_probability": 21.3,
+    "llm_sentiment": "Bullish",
+    "reason": "[Momentum] RSI at 25.2 (bearish zone, not oversold) with falling negative MACD histogram \u2014 downside momentum building. | [Breakout] Price broke below the 20-bar Donchian low (2708.020000) with above-average volume and expanding volatility bands.",
+    "invalidation": "Close back above the breakdown level (2708.020000)."
   }
 }

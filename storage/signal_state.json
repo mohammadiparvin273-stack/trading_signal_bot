@@ -20,23 +20,25 @@
     "invalidation": ""
   },
   "ETH/USDT::1h": {
-    "signal_id": "908c4251",
-    "timestamp": "2026-09-23T18:48:27.455598+00:00",
+    "signal_id": "ed11e01b",
+    "timestamp": "2026-09-25T21:53:46.691028+00:00",
     "asset": "ETH/USDT",
     "timeframe": "1h",
     "regime": "Ranging",
-    "direction": "NEUTRAL",
-    "entry_low": null,
-    "entry_high": null,
-    "stop_loss": null,
-    "take_profit_1": null,
-    "take_profit_2": null,
-    "risk_reward": null,
-    "confidence": 0.0,
-    "strategies": [],
-    "ml_probability": null,
-    "llm_sentiment": "Neutral",
-    "reason": "No strategy found a valid setup on this bar.",
-    "invalidation": ""
+    "direction": "SELL",
+    "entry_low": 2682.67,
+    "entry_high": 2687.896083,
+    "stop_loss": 2717.510555,
+    "take_profit_1": 2656.539584,
+    "take_profit_2": 2630.409167,
+    "risk_reward": 0.75,
+    "confidence": 63.0,
+    "strategies": [
+      "Momentum"
+    ],
+    "ml_probability": 6.6,
+    "llm_sentiment": "Bearish",
+    "reason": "[Momentum] RSI at 46.3 (bearish zone, not oversold) with falling negative MACD histogram \u2014 downside momentum building.",
+    "invalidation": "MACD histogram turns positive or RSI rises above 50."
   }
 }

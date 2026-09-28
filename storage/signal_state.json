@@ -1,26 +1,23 @@
 {
   "BTC/USDT::1h": {
-    "signal_id": "f0961105",
-    "timestamp": "2026-09-28T05:50:16.779270+00:00",
+    "signal_id": "dbe30f1e",
+    "timestamp": "2026-09-28T12:06:36.160878+00:00",
     "asset": "BTC/USDT",
     "timeframe": "1h",
     "regime": "Ranging",
-    "direction": "SELL",
-    "entry_low": 83150.9,
-    "entry_high": 83210.7,
-    "stop_loss": 83562.84853,
-    "take_profit_1": 82446.602939,
-    "take_profit_2": 81742.305878,
-    "risk_reward": 1.71,
-    "confidence": 96.9,
-    "strategies": [
-      "Momentum",
-      "Breakout"
-    ],
-    "ml_probability": 8.5,
-    "llm_sentiment": "Bearish",
-    "reason": "[Momentum] RSI at 27.8 (bearish zone, not oversold) with falling negative MACD histogram \u2014 downside momentum building. | [Breakout] Price broke below the 20-bar Donchian low (83210.700000) with above-average volume and expanding volatility bands.",
-    "invalidation": "Close back above the breakdown level (83210.700000)."
+    "direction": "NEUTRAL",
+    "entry_low": null,
+    "entry_high": null,
+    "stop_loss": null,
+    "take_profit_1": null,
+    "take_profit_2": null,
+    "risk_reward": null,
+    "confidence": 0.0,
+    "strategies": [],
+    "ml_probability": null,
+    "llm_sentiment": "Neutral",
+    "reason": "No strategy found a valid setup on this bar.",
+    "invalidation": ""
   },
   "ETH/USDT::1h": {
     "signal_id": "09a1ab66",

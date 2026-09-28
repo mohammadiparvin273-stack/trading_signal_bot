@@ -1,46 +1,45 @@
 {
   "BTC/USDT::1h": {
-    "signal_id": "1ba41c29",
-    "timestamp": "2026-09-28T00:40:07.338561+00:00",
+    "signal_id": "f0961105",
+    "timestamp": "2026-09-28T05:50:16.779270+00:00",
     "asset": "BTC/USDT",
     "timeframe": "1h",
     "regime": "Ranging",
     "direction": "SELL",
-    "entry_low": 84244.1,
-    "entry_high": 84333.529316,
-    "stop_loss": 84840.295441,
-    "take_profit_1": 83796.953419,
-    "take_profit_2": 83349.806839,
-    "risk_reward": 0.75,
-    "confidence": 61.5,
+    "entry_low": 83150.9,
+    "entry_high": 83210.7,
+    "stop_loss": 83562.84853,
+    "take_profit_1": 82446.602939,
+    "take_profit_2": 81742.305878,
+    "risk_reward": 1.71,
+    "confidence": 96.9,
     "strategies": [
-      "Momentum"
+      "Momentum",
+      "Breakout"
     ],
-    "ml_probability": 12.9,
-    "llm_sentiment": "Neutral",
-    "reason": "[Momentum] RSI at 42.6 (bearish zone, not oversold) with falling negative MACD histogram \u2014 downside momentum building.",
-    "invalidation": "MACD histogram turns positive or RSI rises above 50."
+    "ml_probability": 8.5,
+    "llm_sentiment": "Bearish",
+    "reason": "[Momentum] RSI at 27.8 (bearish zone, not oversold) with falling negative MACD histogram \u2014 downside momentum building. | [Breakout] Price broke below the 20-bar Donchian low (83210.700000) with above-average volume and expanding volatility bands.",
+    "invalidation": "Close back above the breakdown level (83210.700000)."
   },
   "ETH/USDT::1h": {
-    "signal_id": "3d98637d",
-    "timestamp": "2026-09-27T22:05:20.728180+00:00",
+    "signal_id": "09a1ab66",
+    "timestamp": "2026-09-28T05:50:17.895724+00:00",
     "asset": "ETH/USDT",
     "timeframe": "1h",
     "regime": "Ranging",
-    "direction": "SELL",
-    "entry_low": 2677.04,
-    "entry_high": 2680.170869,
-    "stop_loss": 2697.912459,
-    "take_profit_1": 2661.385656,
-    "take_profit_2": 2645.731311,
-    "risk_reward": 0.75,
-    "confidence": 74.7,
-    "strategies": [
-      "Momentum"
-    ],
-    "ml_probability": 3.5,
+    "direction": "NEUTRAL",
+    "entry_low": null,
+    "entry_high": null,
+    "stop_loss": null,
+    "take_profit_1": null,
+    "take_profit_2": null,
+    "risk_reward": null,
+    "confidence": 0.0,
+    "strategies": [],
+    "ml_probability": null,
     "llm_sentiment": "Neutral",
-    "reason": "[Momentum] RSI at 36.2 (bearish zone, not oversold) with falling negative MACD histogram \u2014 downside momentum building.",
-    "invalidation": "MACD histogram turns positive or RSI rises above 50."
+    "reason": "No strategy found a valid setup on this bar.",
+    "invalidation": ""
   }
 }

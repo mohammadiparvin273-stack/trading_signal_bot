@@ -20,25 +20,23 @@
     "invalidation": ""
   },
   "ETH/USDT::1h": {
-    "signal_id": "7b0f4c34",
-    "timestamp": "2026-10-01T16:23:42.614915+00:00",
+    "signal_id": "1991977b",
+    "timestamp": "2026-10-01T21:08:21.123449+00:00",
     "asset": "ETH/USDT",
     "timeframe": "1h",
     "regime": "Ranging",
-    "direction": "SELL",
-    "entry_low": 2682.49,
-    "entry_high": 2687.341338,
-    "stop_loss": 2714.832253,
-    "take_profit_1": 2658.23331,
-    "take_profit_2": 2633.97662,
-    "risk_reward": 0.75,
-    "confidence": 63.5,
-    "strategies": [
-      "Momentum"
-    ],
-    "ml_probability": 4.5,
-    "llm_sentiment": "Bearish",
-    "reason": "[Momentum] RSI at 46.4 (bearish zone, not oversold) with falling negative MACD histogram \u2014 downside momentum building.",
-    "invalidation": "MACD histogram turns positive or RSI rises above 50."
+    "direction": "NEUTRAL",
+    "entry_low": null,
+    "entry_high": null,
+    "stop_loss": null,
+    "take_profit_1": null,
+    "take_profit_2": null,
+    "risk_reward": null,
+    "confidence": 0.0,
+    "strategies": [],
+    "ml_probability": null,
+    "llm_sentiment": "Neutral",
+    "reason": "Confluence found but confidence only 12% (< 60% threshold).",
+    "invalidation": ""
   }
 }

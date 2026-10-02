@@ -422,10 +422,10 @@
     "take_profit_2": 2633.97662,
     "confidence": 63.5,
     "opened_at": "2026-10-01T16:23:42.614915+00:00",
-    "bars_open": 8,
-    "status": "OPEN",
-    "closed_at": null,
-    "exit_price": null,
-    "pnl_pct": null
+    "bars_open": 14,
+    "status": "SL_HIT",
+    "closed_at": "2026-10-02T01:00:00+00:00",
+    "exit_price": 2714.832253,
+    "pnl_pct": -1.206
   }
 }

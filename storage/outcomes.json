@@ -439,11 +439,11 @@
     "take_profit_2": 83311.086857,
     "confidence": 61.1,
     "opened_at": "2026-10-02T18:01:55.162070+00:00",
-    "bars_open": 0,
-    "status": "OPEN",
-    "closed_at": null,
-    "exit_price": null,
-    "pnl_pct": null
+    "bars_open": 4,
+    "status": "TP1_HIT",
+    "closed_at": "2026-10-02T19:00:00+00:00",
+    "exit_price": 84086.943429,
+    "pnl_pct": 0.914
   },
   "0e7c7a20": {
     "signal_id": "0e7c7a20",
@@ -456,10 +456,10 @@
     "take_profit_2": 2632.72115,
     "confidence": 65.9,
     "opened_at": "2026-10-02T18:01:56.076648+00:00",
-    "bars_open": 0,
-    "status": "OPEN",
-    "closed_at": null,
-    "exit_price": null,
-    "pnl_pct": null
+    "bars_open": 4,
+    "status": "TP1_HIT",
+    "closed_at": "2026-10-02T19:00:00+00:00",
+    "exit_price": 2659.740575,
+    "pnl_pct": 1.006
   }
 }

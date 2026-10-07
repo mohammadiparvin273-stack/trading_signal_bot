@@ -22,25 +22,25 @@
     "invalidation": "Close back above EMA50 (84729.115400) or ADX dropping under 18."
   },
   "ETH/USDT::1h": {
-    "signal_id": "38925fa6",
-    "timestamp": "2026-10-07T17:30:39.513541+00:00",
+    "signal_id": "c1e81526",
+    "timestamp": "2026-10-07T22:12:23.594794+00:00",
     "asset": "ETH/USDT",
     "timeframe": "1h",
     "regime": "Trending Bear",
     "direction": "SELL",
-    "entry_low": 2560.3,
-    "entry_high": 2608.348005,
-    "stop_loss": 2648.799482,
-    "take_profit_1": 2537.824848,
-    "take_profit_2": 2515.349697,
-    "risk_reward": 0.25,
-    "confidence": 97.7,
+    "entry_low": 2568.26,
+    "entry_high": 2593.473935,
+    "stop_loss": 2634.337876,
+    "take_profit_1": 2548.716365,
+    "take_profit_2": 2529.17273,
+    "risk_reward": 0.3,
+    "confidence": 100.0,
     "strategies": [
       "Trend Following"
     ],
-    "ml_probability": 6.5,
-    "llm_sentiment": "Neutral",
+    "ml_probability": 3.7,
+    "llm_sentiment": "Bearish",
     "reason": "[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21.",
-    "invalidation": "Close back above EMA50 (2648.799482) or ADX dropping under 18."
+    "invalidation": "Close back above EMA50 (2634.337876) or ADX dropping under 18."
   }
 }

@@ -1,30 +1,8 @@
 {
   "BTC/USDT::1h": {
-    "signal_id": "7ecf796c",
-    "timestamp": "2026-10-07T03:30:43.154352+00:00",
+    "signal_id": "5624727b",
+    "timestamp": "2026-10-07T10:30:16.280390+00:00",
     "asset": "BTC/USDT",
-    "timeframe": "1h",
-    "regime": "Ranging",
-    "direction": "SELL",
-    "entry_low": 84012.1,
-    "entry_high": 84130.258458,
-    "stop_loss": 84602.892292,
-    "take_profit_1": 83125.911561,
-    "take_profit_2": 82633.584651,
-    "risk_reward": 1.5,
-    "confidence": 73.7,
-    "strategies": [
-      "Momentum"
-    ],
-    "ml_probability": 7.8,
-    "llm_sentiment": "Bullish",
-    "reason": "[Momentum] RSI at 26.7 (strong bearish zone) with falling negative MACD histogram \u2014 downside momentum building.",
-    "invalidation": "MACD histogram turns positive or RSI rises above 45."
-  },
-  "ETH/USDT::1h": {
-    "signal_id": "331c7dab",
-    "timestamp": "2026-10-02T22:09:37.411739+00:00",
-    "asset": "ETH/USDT",
     "timeframe": "1h",
     "regime": "Ranging",
     "direction": "NEUTRAL",
@@ -40,5 +18,28 @@
     "llm_sentiment": "Neutral",
     "reason": "No strategy found a valid setup on this bar.",
     "invalidation": ""
+  },
+  "ETH/USDT::1h": {
+    "signal_id": "7b79b9de",
+    "timestamp": "2026-10-07T10:30:17.531929+00:00",
+    "asset": "ETH/USDT",
+    "timeframe": "1h",
+    "regime": "Trending Bear",
+    "direction": "SELL",
+    "entry_low": 2587.52,
+    "entry_high": 2646.237639,
+    "stop_loss": 2674.624112,
+    "take_profit_1": 2565.350365,
+    "take_profit_2": 2543.18073,
+    "risk_reward": 0.25,
+    "confidence": 89.3,
+    "strategies": [
+      "Trend Following",
+      "Breakout"
+    ],
+    "ml_probability": 12.0,
+    "llm_sentiment": "Bullish",
+    "reason": "[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21. | [Breakout] Price broke below the 20-bar Donchian low (2588.010000) with above-average volume and expanding volatility bands.",
+    "invalidation": "Close back above EMA50 (2674.624112) or ADX dropping under 18."
   }
 }

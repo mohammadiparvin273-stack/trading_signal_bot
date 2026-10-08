@@ -485,16 +485,16 @@
     "timeframe": "1h",
     "direction": "SELL",
     "entry_ref": 2587.52,
-    "stop_loss": 2592.225514,
+    "stop_loss": 2565.451484,
     "take_profit_1": 2434.251288,
     "take_profit_2": 2402.672576,
     "confidence": 89.3,
     "opened_at": "2026-10-07T10:30:17.531929+00:00",
-    "bars_open": 29,
-    "status": "OPEN",
-    "closed_at": null,
-    "exit_price": null,
-    "pnl_pct": null
+    "bars_open": 34,
+    "status": "SL_HIT",
+    "closed_at": "2026-10-07T11:00:00+00:00",
+    "exit_price": 2565.451484,
+    "pnl_pct": 0.853
   },
   "1f0ebee9": {
     "signal_id": "1f0ebee9",

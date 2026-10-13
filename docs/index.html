@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="300">
 <title>Trading Signal Bot - Dashboard</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <style>
@@ -10,6 +11,8 @@
   h1 { font-size: 22px; margin-bottom:4px; }
   h2 { font-size: 16px; }
   .muted { color:#9ca3af; font-size:13px; }
+  .top-bar { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; }
+  .freshness { background:#151a21; border:1px solid #262b33; border-radius:20px; padding:6px 14px; font-size:13px; }
   .grid { display:flex; flex-wrap:wrap; gap:14px; margin:18px 0; }
   .card { background:#151a21; border:1px solid #262b33; border-radius:10px; padding:14px; width:260px; }
   .card-header { display:flex; align-items:center; gap:8px; margin-bottom:8px; }
@@ -27,11 +30,17 @@
   .section { margin-top:36px; }
   .chart-box { background:#151a21; border:1px solid #262b33; border-radius:10px; padding:14px; max-width:900px; }
   .table-wrap { overflow-x:auto; }
+  .note { background:#151a21; border:1px solid #262b33; border-radius:10px; padding:12px 16px; font-size:13px; }
+  .two-col { display:flex; gap:20px; flex-wrap:wrap; }
+  .two-col > div { flex:1; min-width:320px; }
 </style>
 </head>
 <body>
-  <h1>Trading Signal Bot - Dashboard</h1>
-  <div class="muted">آخرین بروزرسانی: 2026-10-13 18:13 UTC - این صفحه فقط تحلیل و سیگنال نشان می‌دهد؛ هیچ معامله‌ای اجرا نمی‌شود.</div>
+  <div class="top-bar">
+    <h1>Trading Signal Bot - Dashboard</h1>
+    <span class="freshness" id="freshness" data-generated="2026-10-13T20:34:36.714146+00:00">آخرین ساخت: 2026-10-13 20:34 UTC</span>
+  </div>
+  <div class="muted">این صفحه هر بار که ربات اجرا می‌شود (هر ۱۵ دقیقه) خودکار بازسازی می‌شود و هر ۵ دقیقه خودش را Refresh می‌کند. فقط تحلیل و سیگنال نشان می‌دهد؛ هیچ معامله‌ای اجرا نمی‌شود.</div>
 
   <div class="section">
     <h2>عملکرد واقعی سیگنال‌های ارسال‌شده</h2>
@@ -41,8 +50,40 @@
       <div class="stat">به هدف رسیده<b style="color:#16a34a">11</b></div>
       <div class="stat">حد ضرر خورده<b style="color:#dc2626">18</b></div>
       <div class="stat">منقضی‌شده<b style="color:#a16207">0</b></div>
+      <div class="stat">جایگزین‌شده<b style="color:#6b7280">5</b></div>
       <div class="stat">Win Rate<b style="color:#dc2626">37.9%</b></div>
       <div class="stat">میانگین سود/زیان<b style="color:#dc2626">-0.094%</b></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>عملکرد به تفکیک استراتژی (کدام استراتژی مشکل دارد؟)</h2>
+    <div class="table-wrap">
+    <table>
+      <tr><th>استراتژی</th><th>تعداد</th><th>Win Rate</th><th>میانگین سود/زیان</th></tr>
+      <tr><td>(نامشخص)</td><td>29</td><td style='color:#dc2626'>37.9%</td><td style='color:#dc2626'>-0.094%</td></tr>
+    </table>
+    </div>
+  </div>
+
+  <div class="two-col section">
+    <div>
+      <h2>عملکرد به تفکیک نماد</h2>
+      <div class="table-wrap">
+      <table>
+        <tr><th>نماد</th><th>تعداد</th><th>Win Rate</th><th>میانگین سود/زیان</th></tr>
+        <tr><td>BTC/USDT</td><td>13</td><td style='color:#dc2626'>46.2%</td><td style='color:#16a34a'>0.131%</td></tr><tr><td>ETH/USDT</td><td>16</td><td style='color:#dc2626'>31.2%</td><td style='color:#dc2626'>-0.277%</td></tr>
+      </table>
+      </div>
+    </div>
+    <div>
+      <h2>آیا بخش یادگیری (ML) واقعاً کمک می‌کند؟</h2>
+      <div class="note" style="border-color:#9ca3af">
+        میانگین احتمال ML روی سیگنال‌های برنده: <b>None%</b> (از 0 مورد)<br>
+        میانگین احتمال ML روی سیگنال‌های بازنده: <b>None%</b> (از 0 مورد)<br><br>
+        <span style="color:#9ca3af">هنوز نمونه‌ی کافی (هم برد هم باخت) برای قضاوت درباره‌ی ML وجود ندارد.</span><br><br>
+        <span class="muted">یادآوری: ML جهت سیگنال را تعیین نمی‌کند، فقط روی Confidence استراتژی‌ها اثر می‌گذارد. اگر استراتژی‌ها جهت اشتباه بدهند، ML آن را درست نمی‌کند.</span>
+      </div>
     </div>
   </div>
 
@@ -62,7 +103,7 @@
           </div>
           <div class="card-body">
             <div>Regime: <b>Ranging</b></div>
-            <div>قیمت فعلی: <b>83261.4</b></div>
+            <div>قیمت فعلی: <b>83207.4</b></div>
             <div>Confidence: <b>0.0%</b></div>
             <div>Entry: None - None</div>
             <div>SL: None | TP1: None</div>
@@ -78,7 +119,7 @@
           </div>
           <div class="card-body">
             <div>Regime: <b>Ranging</b></div>
-            <div>قیمت فعلی: <b>2508.41</b></div>
+            <div>قیمت فعلی: <b>2507.03</b></div>
             <div>Confidence: <b>0.0%</b></div>
             <div>Entry: None - None</div>
             <div>SL: None | TP1: None</div>
@@ -96,16 +137,16 @@
   <div class="section">
     <h2>نتیجه‌ی هر سیگنال (چی شد؟)</h2>
     <div class="stats">
-      <div class="stat">تعداد کل اجراها<b>390</b></div>
+      <div class="stat">تعداد کل اجراها<b>392</b></div>
       <div class="stat">سیگنال ارسال‌شده<b>95</b></div>
       <div class="stat">BUY<b style="color:#16a34a">3</b></div>
       <div class="stat">SELL<b style="color:#dc2626">71</b></div>
-      <div class="stat">NEUTRAL<b style="color:#9ca3af">316</b></div>
+      <div class="stat">NEUTRAL<b style="color:#9ca3af">318</b></div>
     </div>
     <div class="table-wrap">
     <table>
       <tr>
-        <th>زمان شروع</th><th>نماد</th><th>جهت</th><th>Entry</th><th>SL</th><th>TP1</th>
+        <th>زمان شروع</th><th>نماد</th><th>جهت</th><th>استراتژی</th><th>Entry</th><th>SL</th><th>TP1</th>
         <th>وضعیت</th><th>سود/زیان</th><th>زمان بسته‌شدن</th>
       </tr>
       
@@ -113,10 +154,11 @@
           <td>2026-10-13T11:07</td>
           <td>ETH/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>2493.05</td>
           <td>2521.347844</td>
           <td>2464.752156</td>
-          <td><span class="badge small" style="background:#dc2626">❌ حد ضرر خورد</span></td>
+          <td><span class="badge small" style="background:#dc2626">حد ضرر خورد</span></td>
           <td><b style='color:#dc2626'>-1.135%</b></td>
           <td class="muted">2026-10-13T14:00</td>
         </tr>
@@ -124,10 +166,11 @@
           <td>2026-10-12T23:30</td>
           <td>ETH/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>2460.81</td>
           <td>2486.187314</td>
           <td>2422.744029</td>
-          <td><span class="badge small" style="background:#16a34a">✅ به هدف رسید</span></td>
+          <td><span class="badge small" style="background:#16a34a">به هدف رسید</span></td>
           <td><b style='color:#16a34a'>1.547%</b></td>
           <td class="muted">2026-10-13T00:00</td>
         </tr>
@@ -135,10 +178,11 @@
           <td>2026-10-12T23:30</td>
           <td>BTC/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>82051.3</td>
           <td>83101.870157</td>
           <td>81458.691081</td>
-          <td><span class="badge small" style="background:#16a34a">✅ به هدف رسید</span></td>
+          <td><span class="badge small" style="background:#16a34a">به هدف رسید</span></td>
           <td><b style='color:#16a34a'>0.722%</b></td>
           <td class="muted">2026-10-13T00:00</td>
         </tr>
@@ -146,10 +190,11 @@
           <td>2026-10-09T19:06</td>
           <td>ETH/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>2487.28</td>
           <td>2520.535827</td>
           <td>2465.041092</td>
-          <td><span class="badge small" style="background:#dc2626">❌ حد ضرر خورد</span></td>
+          <td><span class="badge small" style="background:#dc2626">حد ضرر خورد</span></td>
           <td><b style='color:#dc2626'>-1.337%</b></td>
           <td class="muted">2026-10-11T15:00</td>
         </tr>
@@ -157,10 +202,11 @@
           <td>2026-10-07T17:30</td>
           <td>BTC/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>83199.5</td>
           <td>83984.315047</td>
           <td>82425.321492</td>
-          <td><span class="badge small" style="background:#16a34a">✅ به هدف رسید</span></td>
+          <td><span class="badge small" style="background:#16a34a">به هدف رسید</span></td>
           <td><b style='color:#16a34a'>0.931%</b></td>
           <td class="muted">2026-10-08T04:00</td>
         </tr>
@@ -168,10 +214,11 @@
           <td>2026-10-07T10:30</td>
           <td>ETH/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>2587.52</td>
           <td>2565.451484</td>
           <td>2434.251288</td>
-          <td><span class="badge small" style="background:#dc2626">❌ حد ضرر خورد</span></td>
+          <td><span class="badge small" style="background:#16a34a">با سود بسته شد</span></td>
           <td><b style='color:#16a34a'>0.853%</b></td>
           <td class="muted">2026-10-07T11:00</td>
         </tr>
@@ -179,6 +226,7 @@
           <td>2026-10-07T03:30</td>
           <td>BTC/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>84012.1</td>
           <td>84602.892292</td>
           <td>83125.911561</td>
@@ -190,10 +238,11 @@
           <td>2026-10-02T18:01</td>
           <td>ETH/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>2686.76</td>
           <td>2722.7859</td>
           <td>2659.740575</td>
-          <td><span class="badge small" style="background:#16a34a">✅ به هدف رسید</span></td>
+          <td><span class="badge small" style="background:#16a34a">به هدف رسید</span></td>
           <td><b style='color:#16a34a'>1.006%</b></td>
           <td class="muted">2026-10-02T19:00</td>
         </tr>
@@ -201,10 +250,11 @@
           <td>2026-10-02T18:01</td>
           <td>BTC/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>84862.8</td>
           <td>85897.275429</td>
           <td>84086.943429</td>
-          <td><span class="badge small" style="background:#16a34a">✅ به هدف رسید</span></td>
+          <td><span class="badge small" style="background:#16a34a">به هدف رسید</span></td>
           <td><b style='color:#16a34a'>0.914%</b></td>
           <td class="muted">2026-10-02T19:00</td>
         </tr>
@@ -212,10 +262,11 @@
           <td>2026-10-01T16:23</td>
           <td>ETH/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>2682.49</td>
           <td>2714.832253</td>
           <td>2658.23331</td>
-          <td><span class="badge small" style="background:#dc2626">❌ حد ضرر خورد</span></td>
+          <td><span class="badge small" style="background:#dc2626">حد ضرر خورد</span></td>
           <td><b style='color:#dc2626'>-1.206%</b></td>
           <td class="muted">2026-10-02T01:00</td>
         </tr>
@@ -223,10 +274,11 @@
           <td>2026-10-01T02:27</td>
           <td>BTC/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>83443.9</td>
           <td>84260.637784</td>
           <td>82831.346662</td>
-          <td><span class="badge small" style="background:#dc2626">❌ حد ضرر خورد</span></td>
+          <td><span class="badge small" style="background:#dc2626">حد ضرر خورد</span></td>
           <td><b style='color:#dc2626'>-0.979%</b></td>
           <td class="muted">2026-10-01T05:00</td>
         </tr>
@@ -234,10 +286,11 @@
           <td>2026-09-30T20:09</td>
           <td>ETH/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>2671.56</td>
           <td>2705.693704</td>
           <td>2645.959722</td>
-          <td><span class="badge small" style="background:#dc2626">❌ حد ضرر خورد</span></td>
+          <td><span class="badge small" style="background:#dc2626">حد ضرر خورد</span></td>
           <td><b style='color:#dc2626'>-1.278%</b></td>
           <td class="muted">2026-10-01T04:00</td>
         </tr>
@@ -245,6 +298,7 @@
           <td>2026-09-30T20:09</td>
           <td>BTC/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>83612.9</td>
           <td>84632.049558</td>
           <td>82848.537832</td>
@@ -256,10 +310,11 @@
           <td>2026-09-29T02:53</td>
           <td>ETH/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>2655.77</td>
           <td>2691.548126</td>
           <td>2628.936406</td>
-          <td><span class="badge small" style="background:#dc2626">❌ حد ضرر خورد</span></td>
+          <td><span class="badge small" style="background:#dc2626">حد ضرر خورد</span></td>
           <td><b style='color:#dc2626'>-1.347%</b></td>
           <td class="muted">2026-09-29T06:00</td>
         </tr>
@@ -267,10 +322,11 @@
           <td>2026-09-29T02:53</td>
           <td>BTC/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>83001.4</td>
           <td>83839.389973</td>
           <td>82372.90752</td>
-          <td><span class="badge small" style="background:#dc2626">❌ حد ضرر خورد</span></td>
+          <td><span class="badge small" style="background:#dc2626">حد ضرر خورد</span></td>
           <td><b style='color:#dc2626'>-1.01%</b></td>
           <td class="muted">2026-09-29T06:00</td>
         </tr>
@@ -278,10 +334,11 @@
           <td>2026-09-28T00:40</td>
           <td>BTC/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>84244.1</td>
           <td>83562.84853</td>
           <td>82446.602939</td>
-          <td><span class="badge small" style="background:#dc2626">❌ حد ضرر خورد</span></td>
+          <td><span class="badge small" style="background:#16a34a">با سود بسته شد</span></td>
           <td><b style='color:#16a34a'>0.809%</b></td>
           <td class="muted">2026-09-28T01:00</td>
         </tr>
@@ -289,10 +346,11 @@
           <td>2026-09-27T22:05</td>
           <td>ETH/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>2677.04</td>
           <td>2697.912459</td>
           <td>2661.385656</td>
-          <td><span class="badge small" style="background:#dc2626">❌ حد ضرر خورد</span></td>
+          <td><span class="badge small" style="background:#dc2626">حد ضرر خورد</span></td>
           <td><b style='color:#dc2626'>-0.78%</b></td>
           <td class="muted">2026-09-28T00:00</td>
         </tr>
@@ -300,6 +358,7 @@
           <td>2026-09-27T15:25</td>
           <td>ETH/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>2690.07</td>
           <td>2711.221028</td>
           <td>2674.206729</td>
@@ -311,10 +370,11 @@
           <td>2026-09-25T21:53</td>
           <td>ETH/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>2682.67</td>
           <td>2717.510555</td>
           <td>2656.539584</td>
-          <td><span class="badge small" style="background:#dc2626">❌ حد ضرر خورد</span></td>
+          <td><span class="badge small" style="background:#dc2626">حد ضرر خورد</span></td>
           <td><b style='color:#dc2626'>-1.299%</b></td>
           <td class="muted">2026-09-27T07:00</td>
         </tr>
@@ -322,10 +382,11 @@
           <td>2026-09-25T14:34</td>
           <td>BTC/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>83884.1</td>
           <td>84867.466704</td>
           <td>83146.574972</td>
-          <td><span class="badge small" style="background:#dc2626">❌ حد ضرر خورد</span></td>
+          <td><span class="badge small" style="background:#dc2626">حد ضرر خورد</span></td>
           <td><b style='color:#dc2626'>-1.172%</b></td>
           <td class="muted">2026-09-27T08:00</td>
         </tr>
@@ -333,10 +394,11 @@
           <td>2026-09-24T09:31</td>
           <td>BTC/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>83175.4</td>
           <td>84205.112491</td>
           <td>82403.115632</td>
-          <td><span class="badge small" style="background:#dc2626">❌ حد ضرر خورد</span></td>
+          <td><span class="badge small" style="background:#dc2626">حد ضرر خورد</span></td>
           <td><b style='color:#dc2626'>-1.238%</b></td>
           <td class="muted">2026-09-24T13:00</td>
         </tr>
@@ -344,10 +406,11 @@
           <td>2026-09-23T10:09</td>
           <td>ETH/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>2733.55</td>
           <td>2729.362307</td>
           <td>2634.155387</td>
-          <td><span class="badge small" style="background:#dc2626">❌ حد ضرر خورد</span></td>
+          <td><span class="badge small" style="background:#16a34a">با سود بسته شد</span></td>
           <td><b style='color:#16a34a'>0.153%</b></td>
           <td class="muted">2026-09-23T11:00</td>
         </tr>
@@ -355,10 +418,11 @@
           <td>2026-09-23T10:09</td>
           <td>BTC/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>85816.9</td>
           <td>85857.800228</td>
           <td>83330.599543</td>
-          <td><span class="badge small" style="background:#dc2626">❌ حد ضرر خورد</span></td>
+          <td><span class="badge small" style="background:#dc2626">حد ضرر خورد</span></td>
           <td><b style='color:#dc2626'>-0.048%</b></td>
           <td class="muted">2026-09-23T11:00</td>
         </tr>
@@ -366,10 +430,11 @@
           <td>2026-09-19T01:48</td>
           <td>BTC/USDT</td>
           <td><span class="badge small" style="background:#16a34a">BUY</span></td>
+          <td class="muted"></td>
           <td>81249.5</td>
           <td>78594.966933</td>
           <td>81951.58472</td>
-          <td><span class="badge small" style="background:#16a34a">✅ به هدف رسید</span></td>
+          <td><span class="badge small" style="background:#16a34a">به هدف رسید</span></td>
           <td><b style='color:#16a34a'>0.864%</b></td>
           <td class="muted">2026-09-21T01:00</td>
         </tr>
@@ -377,10 +442,11 @@
           <td>2026-09-18T23:51</td>
           <td>ETH/USDT</td>
           <td><span class="badge small" style="background:#16a34a">BUY</span></td>
+          <td class="muted"></td>
           <td>2611.51</td>
           <td>2512.609053</td>
           <td>2640.260602</td>
-          <td><span class="badge small" style="background:#16a34a">✅ به هدف رسید</span></td>
+          <td><span class="badge small" style="background:#16a34a">به هدف رسید</span></td>
           <td><b style='color:#16a34a'>1.101%</b></td>
           <td class="muted">2026-09-19T08:00</td>
         </tr>
@@ -388,6 +454,7 @@
           <td>2026-09-18T17:19</td>
           <td>BTC/USDT</td>
           <td><span class="badge small" style="background:#16a34a">BUY</span></td>
+          <td class="muted"></td>
           <td>80860.9</td>
           <td>77614.690049</td>
           <td>81600.835405</td>
@@ -399,10 +466,11 @@
           <td>2026-09-15T19:54</td>
           <td>ETH/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>2410.22</td>
           <td>2441.104686</td>
           <td>2367.903293</td>
-          <td><span class="badge small" style="background:#dc2626">❌ حد ضرر خورد</span></td>
+          <td><span class="badge small" style="background:#dc2626">حد ضرر خورد</span></td>
           <td><b style='color:#dc2626'>-1.281%</b></td>
           <td class="muted">2026-09-17T01:00</td>
         </tr>
@@ -410,10 +478,11 @@
           <td>2026-09-15T06:40</td>
           <td>BTC/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>77422.3</td>
           <td>77469.032831</td>
           <td>75798.705943</td>
-          <td><span class="badge small" style="background:#16a34a">✅ به هدف رسید</span></td>
+          <td><span class="badge small" style="background:#16a34a">به هدف رسید</span></td>
           <td><b style='color:#16a34a'>2.097%</b></td>
           <td class="muted">2026-09-15T14:00</td>
         </tr>
@@ -421,10 +490,11 @@
           <td>2026-09-14T00:25</td>
           <td>ETH/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>2477.91</td>
           <td>2501.540254</td>
           <td>2460.187309</td>
-          <td><span class="badge small" style="background:#dc2626">❌ حد ضرر خورد</span></td>
+          <td><span class="badge small" style="background:#dc2626">حد ضرر خورد</span></td>
           <td><b style='color:#dc2626'>-0.954%</b></td>
           <td class="muted">2026-09-14T02:00</td>
         </tr>
@@ -432,10 +502,11 @@
           <td>2026-09-14T00:25</td>
           <td>BTC/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>76753.5</td>
           <td>77183.524879</td>
           <td>76430.981341</td>
-          <td><span class="badge small" style="background:#dc2626">❌ حد ضرر خورد</span></td>
+          <td><span class="badge small" style="background:#dc2626">حد ضرر خورد</span></td>
           <td><b style='color:#dc2626'>-0.56%</b></td>
           <td class="muted">2026-09-14T02:00</td>
         </tr>
@@ -443,10 +514,11 @@
           <td>2026-09-13T11:44</td>
           <td>ETH/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>2479.62</td>
           <td>2501.342493</td>
           <td>2463.328131</td>
-          <td><span class="badge small" style="background:#16a34a">✅ به هدف رسید</span></td>
+          <td><span class="badge small" style="background:#16a34a">به هدف رسید</span></td>
           <td><b style='color:#16a34a'>0.657%</b></td>
           <td class="muted">2026-09-13T13:00</td>
         </tr>
@@ -454,10 +526,11 @@
           <td>2026-09-12T19:43</td>
           <td>BTC/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>77081.9</td>
           <td>77469.967286</td>
           <td>76790.849536</td>
-          <td><span class="badge small" style="background:#16a34a">✅ به هدف رسید</span></td>
+          <td><span class="badge small" style="background:#16a34a">به هدف رسید</span></td>
           <td><b style='color:#16a34a'>0.378%</b></td>
           <td class="muted">2026-09-13T08:00</td>
         </tr>
@@ -465,6 +538,7 @@
           <td>2026-09-11T22:03</td>
           <td>BTC/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>76973.9</td>
           <td>77762.866941</td>
           <td>76184.933059</td>
@@ -476,10 +550,11 @@
           <td>2026-09-10T22:04</td>
           <td>ETH/USDT</td>
           <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted"></td>
           <td>2457.29</td>
           <td>2478.62895</td>
           <td>2435.95105</td>
-          <td><span class="badge small" style="background:#16a34a">✅ به هدف رسید</span></td>
+          <td><span class="badge small" style="background:#16a34a">به هدف رسید</span></td>
           <td><b style='color:#16a34a'>0.868%</b></td>
           <td class="muted">2026-09-10T23:00</td>
         </tr>
@@ -491,7 +566,7 @@
     <h2>حجم دیتای ذخیره‌شده برای آموزش مدل</h2>
     <table>
       <tr><th>فایل (نماد_تایم‌فریم)</th><th>تعداد کندل ذخیره‌شده</th></tr>
-      <tr><td>BTC_USDT_1h</td><td>1511</td></tr><tr><td>ETH_USDT_1h</td><td>1511</td></tr>
+      <tr><td>BTC_USDT_1h</td><td>1513</td></tr><tr><td>ETH_USDT_1h</td><td>1513</td></tr>
     </table>
   </div>
 
@@ -504,6 +579,30 @@
         <th>Confidence</th><th>ML%</th><th>قیمت</th><th>ارسال شد؟</th><th>استراتژی</th><th>دلیل</th>
       </tr>
       
+        <tr>
+          <td>2026-10-13T20:34:35</td>
+          <td>ETH/USDT</td>
+          <td><span class="badge small" style="background:#6b7280">NEUTRAL</span></td>
+          <td>Ranging</td>
+          <td>0.0</td>
+          <td>None</td>
+          <td>2507.03</td>
+          <td>-</td>
+          <td class="muted"></td>
+          <td class="muted">No strategy found a valid setup on this bar.</td>
+        </tr>
+        <tr>
+          <td>2026-10-13T20:34:35</td>
+          <td>BTC/USDT</td>
+          <td><span class="badge small" style="background:#6b7280">NEUTRAL</span></td>
+          <td>Ranging</td>
+          <td>0.0</td>
+          <td>None</td>
+          <td>83207.4</td>
+          <td>-</td>
+          <td class="muted"></td>
+          <td class="muted">No strategy found a valid setup on this bar.</td>
+        </tr>
         <tr>
           <td>2026-10-13T18:13:49</td>
           <td>ETH/USDT</td>
@@ -2880,30 +2979,6 @@
           <td class="muted">Momentum</td>
           <td class="muted">[Momentum] RSI at 32.7 (bearish zone, not oversold) with falling negative MACD histogram — downside momentum building.</td>
         </tr>
-        <tr>
-          <td>2026-09-24T04:41:42</td>
-          <td>ETH/USDT</td>
-          <td><span class="badge small" style="background:#6b7280">NEUTRAL</span></td>
-          <td>Ranging</td>
-          <td>0.0</td>
-          <td>None</td>
-          <td>2676.3</td>
-          <td>-</td>
-          <td class="muted"></td>
-          <td class="muted">No strategy found a valid setup on this bar.</td>
-        </tr>
-        <tr>
-          <td>2026-09-24T04:41:42</td>
-          <td>BTC/USDT</td>
-          <td><span class="badge small" style="background:#6b7280">NEUTRAL</span></td>
-          <td>Ranging</td>
-          <td>0.0</td>
-          <td>None</td>
-          <td>83926.4</td>
-          <td>-</td>
-          <td class="muted"></td>
-          <td class="muted">No strategy found a valid setup on this bar.</td>
-        </tr>
     </table>
     </div>
   </div>
@@ -2912,10 +2987,10 @@
   new Chart(document.getElementById('confChart'), {
     type: 'line',
     data: {
-      labels: ["2026-10-09T13:47", "2026-10-09T13:47", "2026-10-09T19:06", "2026-10-09T19:06", "2026-10-09T23:13", "2026-10-09T23:13", "2026-10-10T02:19", "2026-10-10T02:19", "2026-10-10T08:41", "2026-10-10T08:41", "2026-10-10T14:43", "2026-10-10T14:43", "2026-10-10T18:51", "2026-10-10T18:51", "2026-10-10T22:04", "2026-10-10T22:04", "2026-10-11T00:58", "2026-10-11T00:58", "2026-10-11T06:43", "2026-10-11T06:43", "2026-10-11T13:32", "2026-10-11T13:32", "2026-10-11T18:27", "2026-10-11T18:27", "2026-10-11T22:10", "2026-10-11T22:10", "2026-10-12T01:18", "2026-10-12T01:18", "2026-10-12T07:31", "2026-10-12T07:31", "2026-10-12T16:59", "2026-10-12T16:59", "2026-10-12T23:30", "2026-10-12T23:30", "2026-10-13T03:44", "2026-10-13T03:44", "2026-10-13T11:07", "2026-10-13T11:07", "2026-10-13T18:13", "2026-10-13T18:13"],
+      labels: ["2026-10-07T10:30", "2026-10-07T10:30", "2026-10-07T17:30", "2026-10-07T17:30", "2026-10-07T22:12", "2026-10-07T22:12", "2026-10-08T01:54", "2026-10-08T01:54", "2026-10-08T08:04", "2026-10-08T08:04", "2026-10-08T15:33", "2026-10-08T15:33", "2026-10-08T20:48", "2026-10-08T20:48", "2026-10-09T00:43", "2026-10-09T00:43", "2026-10-09T06:43", "2026-10-09T06:43", "2026-10-09T13:47", "2026-10-09T13:47", "2026-10-09T19:06", "2026-10-09T19:06", "2026-10-09T23:13", "2026-10-09T23:13", "2026-10-10T02:19", "2026-10-10T02:19", "2026-10-10T08:41", "2026-10-10T08:41", "2026-10-10T14:43", "2026-10-10T14:43", "2026-10-10T18:51", "2026-10-10T18:51", "2026-10-10T22:04", "2026-10-10T22:04", "2026-10-11T00:58", "2026-10-11T00:58", "2026-10-11T06:43", "2026-10-11T06:43", "2026-10-11T13:32", "2026-10-11T13:32", "2026-10-11T18:27", "2026-10-11T18:27", "2026-10-11T22:10", "2026-10-11T22:10", "2026-10-12T01:18", "2026-10-12T01:18", "2026-10-12T07:31", "2026-10-12T07:31", "2026-10-12T16:59", "2026-10-12T16:59", "2026-10-12T23:30", "2026-10-12T23:30", "2026-10-13T03:44", "2026-10-13T03:44", "2026-10-13T11:07", "2026-10-13T11:07", "2026-10-13T18:13", "2026-10-13T18:13", "2026-10-13T20:34", "2026-10-13T20:34"],
       datasets: [{
         label: 'Confidence %',
-        data: [0.0, 0.0, 0.0, 64.4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 68.3, 80.9, 0.0, 0.0, 0.0, 69.5, 0.0, 0.0],
+        data: [0.0, 89.3, 92.3, 97.7, 100.0, 100.0, 100.0, 100.0, 91.1, 89.6, 84.4, 95.0, 88.2, 89.8, 88.7, 90.6, 0.0, 0.0, 0.0, 0.0, 0.0, 64.4, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 68.3, 80.9, 0.0, 0.0, 0.0, 69.5, 0.0, 0.0, 0.0, 0.0],
         borderColor: '#3b82f6',
         backgroundColor: 'rgba(59,130,246,0.15)',
         tension: 0.25,
@@ -2945,6 +3020,19 @@
       plugins: { legend: { display: false } }
     }
   });
+
+  // Client-side "X minutes ago" so the freshness badge stays accurate
+  // even while the tab sits open between auto-refreshes.
+  (function() {
+    var el = document.getElementById('freshness');
+    var generated = new Date(el.getAttribute('data-generated'));
+    function tick() {
+      var mins = Math.max(0, Math.round((Date.now() - generated.getTime()) / 60000));
+      el.textContent = mins <= 1 ? 'به‌روزرسانی شده: همین الان' : ('به‌روزرسانی شده: ' + mins + ' دقیقه پیش');
+    }
+    tick();
+    setInterval(tick, 30000);
+  })();
 </script>
 </body>
 </html>

@@ -587,16 +587,16 @@
     "timeframe": "1h",
     "direction": "SELL",
     "entry_ref": 82071.9,
-    "stop_loss": 82808.96291,
-    "take_profit_1": 81019.26531,
-    "take_profit_2": 80452.830621,
+    "stop_loss": 82427.496015,
+    "take_profit_1": 79985.242718,
+    "take_profit_2": 79161.785437,
     "confidence": 60.3,
     "strategies": [
       "Trend Following"
     ],
     "ml_probability": 4.7,
     "opened_at": "2026-10-14T17:05:59.193926+00:00",
-    "bars_open": 8,
+    "bars_open": 13,
     "status": "OPEN",
     "closed_at": null,
     "exit_price": null,
@@ -608,19 +608,19 @@
     "timeframe": "1h",
     "direction": "SELL",
     "entry_ref": 2422.7,
-    "stop_loss": 2477.632567,
-    "take_profit_1": 2390.757523,
-    "take_profit_2": 2364.555046,
+    "stop_loss": 2457.37787,
+    "take_profit_1": 2320.286732,
+    "take_profit_2": 2283.603463,
     "confidence": 71.2,
     "strategies": [
       "Trend Following"
     ],
     "ml_probability": 10.9,
     "opened_at": "2026-10-14T20:40:07.395339+00:00",
-    "bars_open": 5,
-    "status": "OPEN",
-    "closed_at": null,
-    "exit_price": null,
-    "pnl_pct": null
+    "bars_open": 10,
+    "status": "TP1_HIT",
+    "closed_at": "2026-10-15T02:00:00+00:00",
+    "exit_price": 2320.286732,
+    "pnl_pct": 4.227
   }
 }

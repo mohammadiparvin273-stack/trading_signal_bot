@@ -596,11 +596,11 @@
     ],
     "ml_probability": 4.7,
     "opened_at": "2026-10-14T17:05:59.193926+00:00",
-    "bars_open": 18,
-    "status": "OPEN",
-    "closed_at": null,
-    "exit_price": null,
-    "pnl_pct": null
+    "bars_open": 22,
+    "status": "TP1_HIT",
+    "closed_at": "2026-10-15T13:00:00+00:00",
+    "exit_price": 79985.242718,
+    "pnl_pct": 2.542
   },
   "9092e96c": {
     "signal_id": "9092e96c",

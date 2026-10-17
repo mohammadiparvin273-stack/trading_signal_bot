@@ -38,15 +38,15 @@
 <body>
   <div class="top-bar">
     <h1>Trading Signal Bot - Dashboard</h1>
-    <span class="freshness" id="freshness" data-generated="2026-10-17T13:55:09.162917+00:00">آخرین ساخت: 2026-10-17 13:55 UTC</span>
+    <span class="freshness" id="freshness" data-generated="2026-10-17T16:42:18.786806+00:00">آخرین ساخت: 2026-10-17 16:42 UTC</span>
   </div>
   <div class="muted">این صفحه هر بار که ربات اجرا می‌شود (هر ۱۵ دقیقه) خودکار بازسازی می‌شود و هر ۵ دقیقه خودش را Refresh می‌کند. فقط تحلیل و سیگنال نشان می‌دهد؛ هیچ معامله‌ای اجرا نمی‌شود.</div>
 
   <div class="section">
     <h2>عملکرد واقعی سیگنال‌های ارسال‌شده</h2>
     <div class="stats">
-      <div class="stat">کل سیگنال<b>36</b></div>
-      <div class="stat">در حال انتظار<b style="color:#3b82f6">0</b></div>
+      <div class="stat">کل سیگنال<b>37</b></div>
+      <div class="stat">در حال انتظار<b style="color:#3b82f6">1</b></div>
       <div class="stat">به هدف رسیده<b style="color:#16a34a">13</b></div>
       <div class="stat">حد ضرر خورده<b style="color:#dc2626">18</b></div>
       <div class="stat">منقضی‌شده<b style="color:#a16207">0</b></div>
@@ -103,7 +103,7 @@
           </div>
           <div class="card-body">
             <div>Regime: <b>Ranging</b></div>
-            <div>قیمت فعلی: <b>81513.1</b></div>
+            <div>قیمت فعلی: <b>81305.6</b></div>
             <div>Confidence: <b>0.0%</b></div>
             <div>Entry: None - None</div>
             <div>SL: None | TP1: None</div>
@@ -115,16 +115,16 @@
           <div class="card-header">
             <span class="asset">ETH/USDT</span>
             <span class="tf">1h</span>
-            <span class="badge" style="background:#6b7280">NEUTRAL</span>
+            <span class="badge" style="background:#dc2626">SELL</span>
           </div>
           <div class="card-body">
             <div>Regime: <b>Ranging</b></div>
-            <div>قیمت فعلی: <b>2423.42</b></div>
-            <div>Confidence: <b>0.0%</b></div>
-            <div>Entry: None - None</div>
-            <div>SL: None | TP1: None</div>
-            <div>R:R: 1:None</div>
-            <div class="muted">ID b993cdbe - 2026-10-15T15:50:09.678393+00:00</div>
+            <div>قیمت فعلی: <b>2405.84</b></div>
+            <div>Confidence: <b>61.0%</b></div>
+            <div>Entry: 2405.84 - 2408.700346</div>
+            <div>SL: 2420.14173 | TP1: 2384.387405</div>
+            <div>R:R: 1:1.5</div>
+            <div class="muted">ID ce024a88 - 2026-10-17T16:42:17.234668+00:00</div>
           </div>
         </div></div>
   </div>
@@ -137,11 +137,11 @@
   <div class="section">
     <h2>نتیجه‌ی هر سیگنال (چی شد؟)</h2>
     <div class="stats">
-      <div class="stat">تعداد کل اجراها<b>440</b></div>
-      <div class="stat">سیگنال ارسال‌شده<b>105</b></div>
+      <div class="stat">تعداد کل اجراها<b>442</b></div>
+      <div class="stat">سیگنال ارسال‌شده<b>106</b></div>
       <div class="stat">BUY<b style="color:#16a34a">3</b></div>
-      <div class="stat">SELL<b style="color:#dc2626">82</b></div>
-      <div class="stat">NEUTRAL<b style="color:#9ca3af">355</b></div>
+      <div class="stat">SELL<b style="color:#dc2626">83</b></div>
+      <div class="stat">NEUTRAL<b style="color:#9ca3af">356</b></div>
     </div>
     <div class="table-wrap">
     <table>
@@ -150,6 +150,18 @@
         <th>وضعیت</th><th>سود/زیان</th><th>زمان بسته‌شدن</th>
       </tr>
       
+        <tr>
+          <td>2026-10-17T16:42</td>
+          <td>ETH/USDT</td>
+          <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td class="muted">Momentum</td>
+          <td>2405.84</td>
+          <td>2420.14173</td>
+          <td>2384.387405</td>
+          <td><span class="badge small" style="background:#3b82f6">در حال انتظار</span></td>
+          <td>-</td>
+          <td class="muted">-</td>
+        </tr>
         <tr>
           <td>2026-10-14T20:40</td>
           <td>ETH/USDT</td>
@@ -590,7 +602,7 @@
     <h2>حجم دیتای ذخیره‌شده برای آموزش مدل</h2>
     <table>
       <tr><th>فایل (نماد_تایم‌فریم)</th><th>تعداد کندل ذخیره‌شده</th></tr>
-      <tr><td>BTC_USDT_1h</td><td>1602</td></tr><tr><td>ETH_USDT_1h</td><td>1602</td></tr>
+      <tr><td>BTC_USDT_1h</td><td>1605</td></tr><tr><td>ETH_USDT_1h</td><td>1605</td></tr>
     </table>
   </div>
 
@@ -603,6 +615,30 @@
         <th>Confidence</th><th>ML%</th><th>قیمت</th><th>ارسال شد؟</th><th>استراتژی</th><th>دلیل</th>
       </tr>
       
+        <tr>
+          <td>2026-10-17T16:42:17</td>
+          <td>ETH/USDT</td>
+          <td><span class="badge small" style="background:#dc2626">SELL</span></td>
+          <td>Ranging</td>
+          <td>61.0</td>
+          <td>6.3</td>
+          <td>2405.84</td>
+          <td>بله</td>
+          <td class="muted">Momentum</td>
+          <td class="muted">[Momentum] RSI at 34.7 (strong bearish zone) with falling negative MACD histogram — downside momentum building.</td>
+        </tr>
+        <tr>
+          <td>2026-10-17T16:42:16</td>
+          <td>BTC/USDT</td>
+          <td><span class="badge small" style="background:#6b7280">NEUTRAL</span></td>
+          <td>Ranging</td>
+          <td>0.0</td>
+          <td>None</td>
+          <td>81305.6</td>
+          <td>-</td>
+          <td class="muted"></td>
+          <td class="muted">Confluence found but confidence only 41% (< 60% threshold).</td>
+        </tr>
         <tr>
           <td>2026-10-17T13:55:08</td>
           <td>ETH/USDT</td>
@@ -2979,30 +3015,6 @@
           <td class="muted"></td>
           <td class="muted">No strategy found a valid setup on this bar.</td>
         </tr>
-        <tr>
-          <td>2026-09-28T05:50:18</td>
-          <td>ETH/USDT</td>
-          <td><span class="badge small" style="background:#6b7280">NEUTRAL</span></td>
-          <td>Ranging</td>
-          <td>0.0</td>
-          <td>None</td>
-          <td>2650.41</td>
-          <td>بله</td>
-          <td class="muted"></td>
-          <td class="muted">No strategy found a valid setup on this bar.</td>
-        </tr>
-        <tr>
-          <td>2026-09-28T05:50:17</td>
-          <td>BTC/USDT</td>
-          <td><span class="badge small" style="background:#dc2626">SELL</span></td>
-          <td>Ranging</td>
-          <td>96.9</td>
-          <td>8.5</td>
-          <td>83150.9</td>
-          <td>بله</td>
-          <td class="muted">Momentum, Breakout</td>
-          <td class="muted">[Momentum] RSI at 27.8 (bearish zone, not oversold) with falling negative MACD histogram — downside momentum building. | [Breakout] Price br</td>
-        </tr>
     </table>
     </div>
   </div>
@@ -3011,10 +3023,10 @@
   new Chart(document.getElementById('confChart'), {
     type: 'line',
     data: {
-      labels: ["2026-10-12T16:59", "2026-10-12T16:59", "2026-10-12T23:30", "2026-10-12T23:30", "2026-10-13T03:44", "2026-10-13T03:44", "2026-10-13T11:07", "2026-10-13T11:07", "2026-10-13T18:13", "2026-10-13T18:13", "2026-10-13T20:34", "2026-10-13T20:34", "2026-10-13T22:43", "2026-10-13T22:43", "2026-10-14T01:24", "2026-10-14T01:24", "2026-10-14T06:17", "2026-10-14T06:17", "2026-10-14T12:10", "2026-10-14T12:10", "2026-10-14T17:05", "2026-10-14T17:06", "2026-10-14T20:40", "2026-10-14T20:40", "2026-10-14T23:25", "2026-10-14T23:25", "2026-10-15T01:36", "2026-10-15T01:36", "2026-10-15T06:25", "2026-10-15T06:25", "2026-10-15T11:46", "2026-10-15T11:46", "2026-10-15T15:50", "2026-10-15T15:50", "2026-10-15T19:30", "2026-10-15T19:30", "2026-10-15T22:40", "2026-10-15T22:40", "2026-10-16T00:44", "2026-10-16T00:44", "2026-10-16T05:00", "2026-10-16T05:00", "2026-10-16T09:32", "2026-10-16T09:32", "2026-10-16T14:13", "2026-10-16T14:13", "2026-10-16T18:02", "2026-10-16T18:02", "2026-10-16T21:02", "2026-10-16T21:02", "2026-10-16T23:32", "2026-10-16T23:32", "2026-10-17T01:31", "2026-10-17T01:31", "2026-10-17T06:09", "2026-10-17T06:09", "2026-10-17T10:34", "2026-10-17T10:34", "2026-10-17T13:55", "2026-10-17T13:55"],
+      labels: ["2026-10-12T23:30", "2026-10-12T23:30", "2026-10-13T03:44", "2026-10-13T03:44", "2026-10-13T11:07", "2026-10-13T11:07", "2026-10-13T18:13", "2026-10-13T18:13", "2026-10-13T20:34", "2026-10-13T20:34", "2026-10-13T22:43", "2026-10-13T22:43", "2026-10-14T01:24", "2026-10-14T01:24", "2026-10-14T06:17", "2026-10-14T06:17", "2026-10-14T12:10", "2026-10-14T12:10", "2026-10-14T17:05", "2026-10-14T17:06", "2026-10-14T20:40", "2026-10-14T20:40", "2026-10-14T23:25", "2026-10-14T23:25", "2026-10-15T01:36", "2026-10-15T01:36", "2026-10-15T06:25", "2026-10-15T06:25", "2026-10-15T11:46", "2026-10-15T11:46", "2026-10-15T15:50", "2026-10-15T15:50", "2026-10-15T19:30", "2026-10-15T19:30", "2026-10-15T22:40", "2026-10-15T22:40", "2026-10-16T00:44", "2026-10-16T00:44", "2026-10-16T05:00", "2026-10-16T05:00", "2026-10-16T09:32", "2026-10-16T09:32", "2026-10-16T14:13", "2026-10-16T14:13", "2026-10-16T18:02", "2026-10-16T18:02", "2026-10-16T21:02", "2026-10-16T21:02", "2026-10-16T23:32", "2026-10-16T23:32", "2026-10-17T01:31", "2026-10-17T01:31", "2026-10-17T06:09", "2026-10-17T06:09", "2026-10-17T10:34", "2026-10-17T10:34", "2026-10-17T13:55", "2026-10-17T13:55", "2026-10-17T16:42", "2026-10-17T16:42"],
       datasets: [{
         label: 'Confidence %',
-        data: [0.0, 0.0, 68.3, 80.9, 0.0, 0.0, 0.0, 69.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 60.3, 0.0, 67.8, 71.2, 73.3, 84.9, 77.2, 87.7, 88.4, 100.0, 97.3, 99.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+        data: [68.3, 80.9, 0.0, 0.0, 0.0, 69.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 60.3, 0.0, 67.8, 71.2, 73.3, 84.9, 77.2, 87.7, 88.4, 100.0, 97.3, 99.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 61.0],
         borderColor: '#3b82f6',
         backgroundColor: 'rgba(59,130,246,0.15)',
         tension: 0.25,

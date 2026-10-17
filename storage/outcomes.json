@@ -638,10 +638,10 @@
     ],
     "ml_probability": 6.3,
     "opened_at": "2026-10-17T16:42:17.234668+00:00",
-    "bars_open": 2,
-    "status": "OPEN",
-    "closed_at": null,
-    "exit_price": null,
-    "pnl_pct": null
+    "bars_open": 5,
+    "status": "SL_HIT",
+    "closed_at": "2026-10-17T19:00:00+00:00",
+    "exit_price": 2420.14173,
+    "pnl_pct": -0.594
   }
 }

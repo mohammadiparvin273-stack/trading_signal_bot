@@ -1,46 +1,44 @@
 {
   "BTC/USDT::1h": {
-    "signal_id": "16ea5fbd",
-    "timestamp": "2026-10-18T16:52:37.550001+00:00",
+    "signal_id": "a2e755fb",
+    "timestamp": "2026-10-18T19:02:40.117495+00:00",
     "asset": "BTC/USDT",
     "timeframe": "1h",
     "regime": "Ranging",
-    "direction": "SELL",
-    "entry_low": 81081.3,
-    "entry_high": 81156.659475,
-    "stop_loss": 81458.097374,
-    "take_profit_1": 80516.103939,
-    "take_profit_2": 80202.106127,
-    "risk_reward": 1.5,
-    "confidence": 69.9,
-    "strategies": [
-      "Momentum"
-    ],
-    "ml_probability": 8.6,
-    "llm_sentiment": "Bearish",
-    "reason": "[Momentum] RSI at 36.2 (strong bearish zone) with falling negative MACD histogram \u2014 downside momentum building.",
-    "invalidation": "MACD histogram turns positive or RSI rises above 45."
+    "direction": "NEUTRAL",
+    "entry_low": null,
+    "entry_high": null,
+    "stop_loss": null,
+    "take_profit_1": null,
+    "take_profit_2": null,
+    "risk_reward": null,
+    "confidence": 0.0,
+    "strategies": [],
+    "ml_probability": null,
+    "llm_sentiment": "Neutral",
+    "reason": "Confluence found but confidence only 59% (< 60% threshold).",
+    "invalidation": ""
   },
   "ETH/USDT::1h": {
-    "signal_id": "2b71bf98",
-    "timestamp": "2026-10-18T16:52:38.509640+00:00",
+    "signal_id": "07ef3097",
+    "timestamp": "2026-10-18T19:02:41.397246+00:00",
     "asset": "ETH/USDT",
     "timeframe": "1h",
-    "regime": "Ranging",
+    "regime": "Trending Bear",
     "direction": "SELL",
-    "entry_low": 2367.57,
-    "entry_high": 2371.279269,
-    "stop_loss": 2386.116347,
-    "take_profit_1": 2339.750479,
-    "take_profit_2": 2324.29519,
-    "risk_reward": 1.5,
-    "confidence": 70.8,
+    "entry_low": 2366.06,
+    "entry_high": 2395.139092,
+    "stop_loss": 2410.32156,
+    "take_profit_1": 2349.147781,
+    "take_profit_2": 2332.235561,
+    "risk_reward": 0.38,
+    "confidence": 67.1,
     "strategies": [
-      "Momentum"
+      "Trend Following"
     ],
-    "ml_probability": 39.2,
+    "ml_probability": 23.9,
     "llm_sentiment": "Bearish",
-    "reason": "[Momentum] RSI at 29.1 (strong bearish zone) with falling negative MACD histogram \u2014 downside momentum building.",
-    "invalidation": "MACD histogram turns positive or RSI rises above 45."
+    "reason": "[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21.",
+    "invalidation": "Close back above EMA50 (2410.321560) or ADX dropping under 18."
   }
 }

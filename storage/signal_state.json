@@ -1,8 +1,30 @@
 {
   "BTC/USDT::1h": {
-    "signal_id": "46fe9e72",
-    "timestamp": "2026-10-21T20:44:21.309173+00:00",
+    "signal_id": "e00c86a0",
+    "timestamp": "2026-10-21T23:38:35.698160+00:00",
     "asset": "BTC/USDT",
+    "timeframe": "1h",
+    "regime": "Trending Bull",
+    "direction": "BUY",
+    "entry_low": 83968.846103,
+    "entry_high": 84333.3,
+    "stop_loss": 83260.882285,
+    "take_profit_1": 84875.514841,
+    "take_profit_2": 85417.729683,
+    "risk_reward": 0.51,
+    "confidence": 60.2,
+    "strategies": [
+      "Trend Following"
+    ],
+    "ml_probability": 11.4,
+    "llm_sentiment": "Bullish",
+    "reason": "[Trend Following] EMA stack aligned bullish (9>21>50>200) with ADX confirming trend strength; price holding above EMA21.",
+    "invalidation": "Daily/period close back below EMA50 (83260.882285) or ADX dropping under 18."
+  },
+  "ETH/USDT::1h": {
+    "signal_id": "0a9b10cf",
+    "timestamp": "2026-10-21T23:38:36.905661+00:00",
+    "asset": "ETH/USDT",
     "timeframe": "1h",
     "regime": "Trending Bull",
     "direction": "NEUTRAL",
@@ -16,29 +38,7 @@
     "strategies": [],
     "ml_probability": null,
     "llm_sentiment": "Neutral",
-    "reason": "Confluence found but confidence only 60% (< 60% threshold).",
+    "reason": "Confluence found but confidence only 56% (< 60% threshold).",
     "invalidation": ""
-  },
-  "ETH/USDT::1h": {
-    "signal_id": "14a51393",
-    "timestamp": "2026-10-21T20:44:22.280721+00:00",
-    "asset": "ETH/USDT",
-    "timeframe": "1h",
-    "regime": "Trending Bull",
-    "direction": "BUY",
-    "entry_low": 2475.56086,
-    "entry_high": 2497.95,
-    "stop_loss": 2451.345322,
-    "take_profit_1": 2521.686734,
-    "take_profit_2": 2545.423468,
-    "risk_reward": 0.51,
-    "confidence": 60.7,
-    "strategies": [
-      "Trend Following"
-    ],
-    "ml_probability": 22.3,
-    "llm_sentiment": "Bullish",
-    "reason": "[Trend Following] EMA stack aligned bullish (9>21>50>200) with ADX confirming trend strength; price holding above EMA21.",
-    "invalidation": "Daily/period close back below EMA50 (2451.345322) or ADX dropping under 18."
   }
 }

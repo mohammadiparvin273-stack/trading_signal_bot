@@ -1,6 +1,6 @@
 {
   "__open_index__": {
-    "ETH/USDT::1h": "9764c791",
+    "ETH/USDT::1h": "14a51393",
     "BTC/USDT::1h": "f5754aac"
   },
   "ce8a95e1": {
@@ -743,6 +743,27 @@
     ],
     "ml_probability": 17.0,
     "opened_at": "2026-10-21T17:25:01.671476+00:00",
+    "bars_open": 3,
+    "status": "OPEN",
+    "closed_at": null,
+    "exit_price": null,
+    "pnl_pct": null
+  },
+  "14a51393": {
+    "signal_id": "14a51393",
+    "asset": "ETH/USDT",
+    "timeframe": "1h",
+    "direction": "BUY",
+    "entry_ref": 2497.95,
+    "stop_loss": 2451.345322,
+    "take_profit_1": 2521.686734,
+    "take_profit_2": 2545.423468,
+    "confidence": 60.7,
+    "strategies": [
+      "Trend Following"
+    ],
+    "ml_probability": 22.3,
+    "opened_at": "2026-10-21T20:44:22.280721+00:00",
     "bars_open": 0,
     "status": "OPEN",
     "closed_at": null,

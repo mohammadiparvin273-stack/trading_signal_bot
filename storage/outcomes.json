@@ -1,7 +1,7 @@
 {
   "__open_index__": {
     "ETH/USDT::1h": "9764c791",
-    "BTC/USDT::1h": "0d53cb6b"
+    "BTC/USDT::1h": "f5754aac"
   },
   "ce8a95e1": {
     "signal_id": "ce8a95e1",
@@ -727,5 +727,26 @@
     "closed_at": "2026-10-20T03:00:00+00:00",
     "exit_price": 82071.273404,
     "pnl_pct": -0.637
+  },
+  "f5754aac": {
+    "signal_id": "f5754aac",
+    "asset": "BTC/USDT",
+    "timeframe": "1h",
+    "direction": "BUY",
+    "entry_ref": 84554.0,
+    "stop_loss": 82912.589078,
+    "take_profit_1": 85120.841791,
+    "take_profit_2": 85687.683583,
+    "confidence": 61.8,
+    "strategies": [
+      "Trend Following"
+    ],
+    "ml_probability": 17.0,
+    "opened_at": "2026-10-21T17:25:01.671476+00:00",
+    "bars_open": 0,
+    "status": "OPEN",
+    "closed_at": null,
+    "exit_price": null,
+    "pnl_pct": null
   }
 }

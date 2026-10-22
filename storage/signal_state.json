@@ -20,23 +20,25 @@
     "invalidation": ""
   },
   "ETH/USDT::1h": {
-    "signal_id": "0a9b10cf",
-    "timestamp": "2026-10-21T23:38:36.905661+00:00",
+    "signal_id": "8c7cb52b",
+    "timestamp": "2026-10-22T12:25:18.227270+00:00",
     "asset": "ETH/USDT",
     "timeframe": "1h",
-    "regime": "Trending Bull",
-    "direction": "NEUTRAL",
-    "entry_low": null,
-    "entry_high": null,
-    "stop_loss": null,
-    "take_profit_1": null,
-    "take_profit_2": null,
-    "risk_reward": null,
-    "confidence": 0.0,
-    "strategies": [],
-    "ml_probability": null,
-    "llm_sentiment": "Neutral",
-    "reason": "Confluence found but confidence only 56% (< 60% threshold).",
-    "invalidation": ""
+    "regime": "Trending Bear",
+    "direction": "SELL",
+    "entry_low": 2404.3,
+    "entry_high": 2438.964398,
+    "stop_loss": 2443.911909,
+    "take_profit_1": 2384.767625,
+    "take_profit_2": 2365.235251,
+    "risk_reward": 0.49,
+    "confidence": 93.7,
+    "strategies": [
+      "Trend Following"
+    ],
+    "ml_probability": 6.6,
+    "llm_sentiment": "Bearish",
+    "reason": "[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21.",
+    "invalidation": "Close back above EMA50 (2443.911909) or ADX dropping under 18."
   }
 }

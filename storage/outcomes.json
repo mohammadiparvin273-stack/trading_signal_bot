@@ -764,11 +764,11 @@
     ],
     "ml_probability": 22.3,
     "opened_at": "2026-10-21T20:44:22.280721+00:00",
-    "bars_open": 3,
-    "status": "OPEN",
-    "closed_at": null,
-    "exit_price": null,
-    "pnl_pct": null
+    "bars_open": 5,
+    "status": "SL_HIT",
+    "closed_at": "2026-10-22T01:00:00+00:00",
+    "exit_price": 2451.345322,
+    "pnl_pct": -1.866
   },
   "e00c86a0": {
     "signal_id": "e00c86a0",
@@ -785,7 +785,7 @@
     ],
     "ml_probability": 11.4,
     "opened_at": "2026-10-21T23:38:35.698160+00:00",
-    "bars_open": 0,
+    "bars_open": 2,
     "status": "OPEN",
     "closed_at": null,
     "exit_price": null,

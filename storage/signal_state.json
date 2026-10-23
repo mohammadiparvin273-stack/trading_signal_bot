@@ -1,26 +1,26 @@
 {
   "BTC/USDT::1h": {
-    "signal_id": "9c165af2",
-    "timestamp": "2026-10-23T20:13:27.236367+00:00",
+    "signal_id": "561acbb8",
+    "timestamp": "2026-10-23T23:07:56.328667+00:00",
     "asset": "BTC/USDT",
     "timeframe": "1h",
     "regime": "Trending Bear",
     "direction": "SELL",
-    "entry_low": 81322.1,
-    "entry_high": 81667.037626,
-    "stop_loss": 81987.491961,
-    "take_profit_1": 80865.571862,
-    "take_profit_2": 80409.043725,
-    "risk_reward": 0.69,
-    "confidence": 68.6,
+    "entry_low": 80789.4,
+    "entry_high": 81491.114971,
+    "stop_loss": 81872.410484,
+    "take_profit_1": 80307.250504,
+    "take_profit_2": 79825.101007,
+    "risk_reward": 0.45,
+    "confidence": 76.2,
     "strategies": [
       "Trend Following",
       "Momentum"
     ],
-    "ml_probability": 13.6,
+    "ml_probability": 25.6,
     "llm_sentiment": "Bullish",
-    "reason": "[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21. | [Momentum] RSI at 39.1 (strong bearish zone) with falling negative MACD histogram \u2014 downside momentum building.",
-    "invalidation": "Close back above EMA50 (81987.491961) or ADX dropping under 18."
+    "reason": "[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21. | [Momentum] RSI at 30.9 (strong bearish zone) with falling negative MACD histogram \u2014 downside momentum building.",
+    "invalidation": "Close back above EMA50 (81872.410484) or ADX dropping under 18."
   },
   "ETH/USDT::1h": {
     "signal_id": "09573efd",

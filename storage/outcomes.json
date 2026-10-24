@@ -839,9 +839,9 @@
     "timeframe": "1h",
     "direction": "SELL",
     "entry_ref": 2344.17,
-    "stop_loss": 2365.030623,
-    "take_profit_1": 2319.708753,
-    "take_profit_2": 2295.247506,
+    "stop_loss": 2339.090003,
+    "take_profit_1": 2280.564995,
+    "take_profit_2": 2261.056659,
     "confidence": 78.0,
     "strategies": [
       "Trend Following",
@@ -850,10 +850,10 @@
     ],
     "ml_probability": 47.5,
     "opened_at": "2026-10-24T14:41:10.663438+00:00",
-    "bars_open": 0,
-    "status": "OPEN",
-    "closed_at": null,
-    "exit_price": null,
-    "pnl_pct": null
+    "bars_open": 3,
+    "status": "SL_HIT",
+    "closed_at": "2026-10-24T15:00:00+00:00",
+    "exit_price": 2339.090003,
+    "pnl_pct": 0.217
   }
 }

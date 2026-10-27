@@ -997,11 +997,11 @@
     ],
     "ml_probability": 14.8,
     "opened_at": "2026-10-27T05:45:26.377277+00:00",
-    "bars_open": 6,
-    "status": "OPEN",
-    "closed_at": null,
-    "exit_price": null,
-    "pnl_pct": null
+    "bars_open": 11,
+    "status": "SL_HIT",
+    "closed_at": "2026-10-27T12:00:00+00:00",
+    "exit_price": 80404.614928,
+    "pnl_pct": -0.619
   },
   "d9e9714f": {
     "signal_id": "d9e9714f",
@@ -1018,10 +1018,10 @@
     ],
     "ml_probability": 15.8,
     "opened_at": "2026-10-27T05:45:27.549984+00:00",
-    "bars_open": 6,
-    "status": "OPEN",
-    "closed_at": null,
-    "exit_price": null,
-    "pnl_pct": null
+    "bars_open": 11,
+    "status": "SL_HIT",
+    "closed_at": "2026-10-27T12:00:00+00:00",
+    "exit_price": 2333.799898,
+    "pnl_pct": -0.871
   }
 }

@@ -1,46 +1,44 @@
 {
   "BTC/USDT::1h": {
-    "signal_id": "3cf36a9d",
-    "timestamp": "2026-10-30T20:13:21.416371+00:00",
+    "signal_id": "d62325c1",
+    "timestamp": "2026-10-30T23:44:02.835989+00:00",
     "asset": "BTC/USDT",
     "timeframe": "1h",
     "regime": "Trending Bear",
     "direction": "SELL",
-    "entry_low": 76911.6,
-    "entry_high": 77719.356837,
-    "stop_loss": 78723.28007,
-    "take_profit_1": 76023.138647,
-    "take_profit_2": 75134.677294,
-    "risk_reward": 0.49,
-    "confidence": 84.5,
+    "entry_low": 77249.9,
+    "entry_high": 77531.322116,
+    "stop_loss": 78523.020314,
+    "take_profit_1": 76433.11806,
+    "take_profit_2": 75616.33612,
+    "risk_reward": 0.64,
+    "confidence": 80.7,
     "strategies": [
       "Trend Following"
     ],
-    "ml_probability": 10.8,
+    "ml_probability": 24.4,
     "llm_sentiment": "Bearish",
     "reason": "[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21.",
-    "invalidation": "Close back above EMA50 (78723.280070) or ADX dropping under 18."
+    "invalidation": "Close back above EMA50 (78523.020314) or ADX dropping under 18."
   },
   "ETH/USDT::1h": {
-    "signal_id": "8379ba50",
-    "timestamp": "2026-10-30T20:13:22.682286+00:00",
+    "signal_id": "ca89dca1",
+    "timestamp": "2026-10-30T23:44:03.843131+00:00",
     "asset": "ETH/USDT",
     "timeframe": "1h",
-    "regime": "Trending Bear",
-    "direction": "SELL",
-    "entry_low": 2239.0,
-    "entry_high": 2245.808825,
-    "stop_loss": 2274.486666,
-    "take_profit_1": 2205.832351,
-    "take_profit_2": 2172.664703,
-    "risk_reward": 0.93,
-    "confidence": 66.6,
-    "strategies": [
-      "Trend Following"
-    ],
-    "ml_probability": 14.5,
-    "llm_sentiment": "Bearish",
-    "reason": "[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21.",
-    "invalidation": "Close back above EMA50 (2274.486666) or ADX dropping under 18."
+    "regime": "Ranging",
+    "direction": "NEUTRAL",
+    "entry_low": null,
+    "entry_high": null,
+    "stop_loss": null,
+    "take_profit_1": null,
+    "take_profit_2": null,
+    "risk_reward": null,
+    "confidence": 0.0,
+    "strategies": [],
+    "ml_probability": null,
+    "llm_sentiment": "Neutral",
+    "reason": "No strategy found a valid setup on this bar.",
+    "invalidation": ""
   }
 }

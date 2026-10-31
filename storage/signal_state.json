@@ -1,25 +1,23 @@
 {
   "BTC/USDT::1h": {
-    "signal_id": "f4fe29ee",
-    "timestamp": "2026-10-31T08:53:31.809610+00:00",
+    "signal_id": "1f1f1c1b",
+    "timestamp": "2026-10-31T14:52:44.492159+00:00",
     "asset": "BTC/USDT",
     "timeframe": "1h",
-    "regime": "Trending Bear",
-    "direction": "SELL",
-    "entry_low": 77295.1,
-    "entry_high": 77388.910162,
-    "stop_loss": 78149.722694,
-    "take_profit_1": 76719.474532,
-    "take_profit_2": 76143.849064,
-    "risk_reward": 0.67,
-    "confidence": 67.9,
-    "strategies": [
-      "Trend Following"
-    ],
-    "ml_probability": 19.5,
-    "llm_sentiment": "Bearish",
-    "reason": "[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21.",
-    "invalidation": "Close back above EMA50 (78149.722694) or ADX dropping under 18."
+    "regime": "Ranging",
+    "direction": "NEUTRAL",
+    "entry_low": null,
+    "entry_high": null,
+    "stop_loss": null,
+    "take_profit_1": null,
+    "take_profit_2": null,
+    "risk_reward": null,
+    "confidence": 0.0,
+    "strategies": [],
+    "ml_probability": null,
+    "llm_sentiment": "Neutral",
+    "reason": "No strategy found a valid setup on this bar.",
+    "invalidation": ""
   },
   "ETH/USDT::1h": {
     "signal_id": "ca89dca1",

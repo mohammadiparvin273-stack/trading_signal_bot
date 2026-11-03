@@ -22,25 +22,25 @@
     "invalidation": "MACD histogram turns positive or RSI rises above 45."
   },
   "ETH/USDT::1h": {
-    "signal_id": "a4687248",
-    "timestamp": "2026-11-02T18:22:08.612352+00:00",
+    "signal_id": "aa7ded35",
+    "timestamp": "2026-11-03T01:05:33.836502+00:00",
     "asset": "ETH/USDT",
     "timeframe": "1h",
     "regime": "Trending Bear",
     "direction": "SELL",
-    "entry_low": 2256.06,
-    "entry_high": 2260.247262,
-    "stop_loss": 2276.99631,
-    "take_profit_1": 2224.655534,
-    "take_profit_2": 2207.208609,
-    "risk_reward": 1.5,
-    "confidence": 63.0,
+    "entry_low": 2260.26,
+    "entry_high": 2266.630938,
+    "stop_loss": 2279.027651,
+    "take_profit_1": 2241.492349,
+    "take_profit_2": 2222.724699,
+    "risk_reward": 1.0,
+    "confidence": 63.9,
     "strategies": [
-      "Momentum"
+      "Trend Following"
     ],
-    "ml_probability": 23.8,
-    "llm_sentiment": "Bearish",
-    "reason": "[Momentum] RSI at 36.8 (strong bearish zone) with falling negative MACD histogram \u2014 downside momentum building.",
-    "invalidation": "MACD histogram turns positive or RSI rises above 45."
+    "ml_probability": 10.7,
+    "llm_sentiment": "Neutral",
+    "reason": "[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21.",
+    "invalidation": "Close back above EMA50 (2268.984118) or ADX dropping under 18."
   }
 }

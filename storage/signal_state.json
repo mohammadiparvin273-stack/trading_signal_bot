@@ -1,46 +1,44 @@
 {
   "BTC/USDT::1h": {
-    "signal_id": "3e2c58af",
-    "timestamp": "2026-11-05T16:39:42.107952+00:00",
+    "signal_id": "ee7c03cd",
+    "timestamp": "2026-11-05T22:15:54.119960+00:00",
     "asset": "BTC/USDT",
     "timeframe": "1h",
-    "regime": "Ranging",
+    "regime": "Trending Bear",
     "direction": "SELL",
-    "entry_low": 76791.5,
-    "entry_high": 77004.806794,
-    "stop_loss": 77858.033971,
-    "take_profit_1": 75191.699044,
-    "take_profit_2": 74302.920735,
-    "risk_reward": 1.5,
-    "confidence": 83.5,
+    "entry_low": 76096.5,
+    "entry_high": 77888.035587,
+    "stop_loss": 78408.602834,
+    "take_profit_1": 75113.32682,
+    "take_profit_2": 74130.153639,
+    "risk_reward": 0.43,
+    "confidence": 100.0,
     "strategies": [
-      "Momentum"
+      "Trend Following"
     ],
-    "ml_probability": 14.0,
+    "ml_probability": 5.8,
     "llm_sentiment": "Bearish",
-    "reason": "[Momentum] RSI at 29.4 (strong bearish zone) with falling negative MACD histogram \u2014 downside momentum building.",
-    "invalidation": "MACD histogram turns positive or RSI rises above 45."
+    "reason": "[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21.",
+    "invalidation": "Close back above EMA50 (78408.602834) or ADX dropping under 18."
   },
   "ETH/USDT::1h": {
-    "signal_id": "11ac22db",
-    "timestamp": "2026-11-05T16:39:43.312597+00:00",
+    "signal_id": "87ed46a3",
+    "timestamp": "2026-11-05T22:15:55.253579+00:00",
     "asset": "ETH/USDT",
     "timeframe": "1h",
     "regime": "Ranging",
-    "direction": "SELL",
-    "entry_low": 2270.98,
-    "entry_high": 2278.925873,
-    "stop_loss": 2310.709366,
-    "take_profit_1": 2211.385951,
-    "take_profit_2": 2178.278145,
-    "risk_reward": 1.5,
-    "confidence": 84.8,
-    "strategies": [
-      "Momentum"
-    ],
-    "ml_probability": 20.0,
-    "llm_sentiment": "Bearish",
-    "reason": "[Momentum] RSI at 27.9 (strong bearish zone) with falling negative MACD histogram \u2014 downside momentum building.",
-    "invalidation": "MACD histogram turns positive or RSI rises above 45."
+    "direction": "NEUTRAL",
+    "entry_low": null,
+    "entry_high": null,
+    "stop_loss": null,
+    "take_profit_1": null,
+    "take_profit_2": null,
+    "risk_reward": null,
+    "confidence": 0.0,
+    "strategies": [],
+    "ml_probability": null,
+    "llm_sentiment": "Neutral",
+    "reason": "No strategy found a valid setup on this bar.",
+    "invalidation": ""
   }
 }

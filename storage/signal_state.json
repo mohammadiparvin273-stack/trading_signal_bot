@@ -1,46 +1,46 @@
 {
   "BTC/USDT::1h": {
-    "signal_id": "bed06775",
-    "timestamp": "2026-11-05T08:29:19.981868+00:00",
+    "signal_id": "3e2c58af",
+    "timestamp": "2026-11-05T16:39:42.107952+00:00",
     "asset": "BTC/USDT",
     "timeframe": "1h",
-    "regime": "Trending Bull",
-    "direction": "BUY",
-    "entry_low": 80033.712473,
-    "entry_high": 80599.4,
-    "stop_loss": 79126.323321,
-    "take_profit_1": 81235.566905,
-    "take_profit_2": 81871.733809,
-    "risk_reward": 0.43,
-    "confidence": 60.4,
+    "regime": "Ranging",
+    "direction": "SELL",
+    "entry_low": 76791.5,
+    "entry_high": 77004.806794,
+    "stop_loss": 77858.033971,
+    "take_profit_1": 75191.699044,
+    "take_profit_2": 74302.920735,
+    "risk_reward": 1.5,
+    "confidence": 83.5,
     "strategies": [
-      "Trend Following"
+      "Momentum"
     ],
-    "ml_probability": 12.3,
-    "llm_sentiment": "Bullish",
-    "reason": "[Trend Following] EMA stack aligned bullish (9>21>50>200) with ADX confirming trend strength; price holding above EMA21.",
-    "invalidation": "Daily/period close back below EMA50 (79126.323321) or ADX dropping under 18."
+    "ml_probability": 14.0,
+    "llm_sentiment": "Bearish",
+    "reason": "[Momentum] RSI at 29.4 (strong bearish zone) with falling negative MACD histogram \u2014 downside momentum building.",
+    "invalidation": "MACD histogram turns positive or RSI rises above 45."
   },
   "ETH/USDT::1h": {
-    "signal_id": "401630d6",
-    "timestamp": "2026-11-05T08:29:21.268811+00:00",
+    "signal_id": "11ac22db",
+    "timestamp": "2026-11-05T16:39:43.312597+00:00",
     "asset": "ETH/USDT",
     "timeframe": "1h",
-    "regime": "Trending Bull",
-    "direction": "BUY",
-    "entry_low": 2402.907592,
-    "entry_high": 2425.42,
-    "stop_loss": 2358.549927,
-    "take_profit_1": 2450.544051,
-    "take_profit_2": 2475.668103,
-    "risk_reward": 0.38,
-    "confidence": 60.8,
+    "regime": "Ranging",
+    "direction": "SELL",
+    "entry_low": 2270.98,
+    "entry_high": 2278.925873,
+    "stop_loss": 2310.709366,
+    "take_profit_1": 2211.385951,
+    "take_profit_2": 2178.278145,
+    "risk_reward": 1.5,
+    "confidence": 84.8,
     "strategies": [
-      "Trend Following"
+      "Momentum"
     ],
-    "ml_probability": 17.9,
-    "llm_sentiment": "Bullish",
-    "reason": "[Trend Following] EMA stack aligned bullish (9>21>50>200) with ADX confirming trend strength; price holding above EMA21.",
-    "invalidation": "Daily/period close back below EMA50 (2358.549927) or ADX dropping under 18."
+    "ml_probability": 20.0,
+    "llm_sentiment": "Bearish",
+    "reason": "[Momentum] RSI at 27.9 (strong bearish zone) with falling negative MACD histogram \u2014 downside momentum building.",
+    "invalidation": "MACD histogram turns positive or RSI rises above 45."
   }
 }

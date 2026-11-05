@@ -1,7 +1,7 @@
 {
   "__open_index__": {
     "ETH/USDT::1h": "bd3201c9",
-    "BTC/USDT::1h": "b938512f"
+    "BTC/USDT::1h": "bed06775"
   },
   "ce8a95e1": {
     "signal_id": "ce8a95e1",
@@ -1159,7 +1159,7 @@
     "timeframe": "1h",
     "direction": "BUY",
     "entry_ref": 2422.94,
-    "stop_loss": 2337.219944,
+    "stop_loss": 2358.549927,
     "take_profit_1": 2452.120539,
     "take_profit_2": 2481.301078,
     "confidence": 62.6,
@@ -1168,6 +1168,27 @@
     ],
     "ml_probability": 19.9,
     "opened_at": "2026-11-05T01:39:38.326737+00:00",
+    "bars_open": 7,
+    "status": "OPEN",
+    "closed_at": null,
+    "exit_price": null,
+    "pnl_pct": null
+  },
+  "bed06775": {
+    "signal_id": "bed06775",
+    "asset": "BTC/USDT",
+    "timeframe": "1h",
+    "direction": "BUY",
+    "entry_ref": 80599.4,
+    "stop_loss": 79126.323321,
+    "take_profit_1": 81235.566905,
+    "take_profit_2": 81871.733809,
+    "confidence": 60.4,
+    "strategies": [
+      "Trend Following"
+    ],
+    "ml_probability": 12.3,
+    "opened_at": "2026-11-05T08:29:19.981868+00:00",
     "bars_open": 0,
     "status": "OPEN",
     "closed_at": null,

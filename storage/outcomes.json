@@ -1210,7 +1210,7 @@
     ],
     "ml_probability": 14.0,
     "opened_at": "2026-11-05T16:39:42.107952+00:00",
-    "bars_open": 6,
+    "bars_open": 10,
     "status": "OPEN",
     "closed_at": null,
     "exit_price": null,
@@ -1231,10 +1231,10 @@
     ],
     "ml_probability": 20.0,
     "opened_at": "2026-11-05T16:39:43.312597+00:00",
-    "bars_open": 6,
-    "status": "OPEN",
-    "closed_at": null,
-    "exit_price": null,
-    "pnl_pct": null
+    "bars_open": 10,
+    "status": "TP1_HIT",
+    "closed_at": "2026-11-05T23:00:00+00:00",
+    "exit_price": 2211.385951,
+    "pnl_pct": 2.624
   }
 }

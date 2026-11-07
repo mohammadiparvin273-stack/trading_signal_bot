@@ -1,6 +1,6 @@
 {
   "__open_index__": {
-    "ETH/USDT::1h": "9be5e2bb",
+    "ETH/USDT::1h": "afb9186e",
     "BTC/USDT::1h": "018530e5"
   },
   "ce8a95e1": {
@@ -1253,8 +1253,8 @@
     "ml_probability": 20.6,
     "opened_at": "2026-11-06T09:50:44.633993+00:00",
     "bars_open": 33,
-    "status": "OPEN",
-    "closed_at": null,
+    "status": "SUPERSEDED",
+    "closed_at": "2026-11-07T22:24:07.653460+00:00",
     "exit_price": null,
     "pnl_pct": null
   },
@@ -1273,7 +1273,28 @@
     ],
     "ml_probability": 19.7,
     "opened_at": "2026-11-07T14:13:19.858872+00:00",
-    "bars_open": 4,
+    "bars_open": 8,
+    "status": "TP1_HIT",
+    "closed_at": "2026-11-07T20:00:00+00:00",
+    "exit_price": 75603.822122,
+    "pnl_pct": 0.458
+  },
+  "afb9186e": {
+    "signal_id": "afb9186e",
+    "asset": "ETH/USDT",
+    "timeframe": "1h",
+    "direction": "SELL",
+    "entry_ref": 2234.49,
+    "stop_loss": 2252.52838,
+    "take_profit_1": 2223.483591,
+    "take_profit_2": 2212.477182,
+    "confidence": 62.1,
+    "strategies": [
+      "Trend Following"
+    ],
+    "ml_probability": 7.8,
+    "opened_at": "2026-11-07T22:24:07.653460+00:00",
+    "bars_open": 0,
     "status": "OPEN",
     "closed_at": null,
     "exit_price": null,

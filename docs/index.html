@@ -38,7 +38,7 @@
 <body>
   <div class="top-bar">
     <h1>Trading Signal Bot - Dashboard</h1>
-    <span class="freshness" id="freshness" data-generated="2026-11-09T20:04:04.345925+00:00">آخرین ساخت: 2026-11-09 20:04 UTC</span>
+    <span class="freshness" id="freshness" data-generated="2026-11-10T02:41:49.204739+00:00">آخرین ساخت: 2026-11-10 02:41 UTC</span>
   </div>
   <div class="muted">این صفحه هر بار که ربات اجرا می‌شود (هر ۱۵ دقیقه) خودکار بازسازی می‌شود و هر ۵ دقیقه خودش را Refresh می‌کند. فقط تحلیل و سیگنال نشان می‌دهد؛ هیچ معامله‌ای اجرا نمی‌شود.</div>
 
@@ -103,7 +103,7 @@
           </div>
           <div class="card-body">
             <div>Regime: <b>Ranging</b></div>
-            <div>قیمت فعلی: <b>74824.4</b></div>
+            <div>قیمت فعلی: <b>74801.7</b></div>
             <div>Confidence: <b>0.0%</b></div>
             <div>Entry: None - None</div>
             <div>SL: None | TP1: None</div>
@@ -115,16 +115,16 @@
           <div class="card-header">
             <span class="asset">ETH/USDT</span>
             <span class="tf">1h</span>
-            <span class="badge" style="background:#dc2626">SELL</span>
+            <span class="badge" style="background:#6b7280">NEUTRAL</span>
           </div>
           <div class="card-body">
-            <div>Regime: <b>Trending Bear</b></div>
-            <div>قیمت فعلی: <b>2126.5</b></div>
-            <div>Confidence: <b>77.4%</b></div>
-            <div>Entry: 2126.5 - 2137.681593</div>
-            <div>SL: 2171.026661 | TP1: 2098.404598</div>
-            <div>R:R: 1:0.63</div>
-            <div class="muted">ID 81b71e5b - 2026-11-09T20:04:03.203554+00:00</div>
+            <div>Regime: <b>Ranging</b></div>
+            <div>قیمت فعلی: <b>2120.41</b></div>
+            <div>Confidence: <b>0.0%</b></div>
+            <div>Entry: None - None</div>
+            <div>SL: None | TP1: None</div>
+            <div>R:R: 1:None</div>
+            <div class="muted">ID a62448a6 - 2026-11-10T02:41:48.054561+00:00</div>
           </div>
         </div></div>
   </div>
@@ -137,11 +137,11 @@
   <div class="section">
     <h2>نتیجه‌ی هر سیگنال (چی شد؟)</h2>
     <div class="stats">
-      <div class="stat">تعداد کل اجراها<b>684</b></div>
-      <div class="stat">سیگنال ارسال‌شده<b>202</b></div>
+      <div class="stat">تعداد کل اجراها<b>686</b></div>
+      <div class="stat">سیگنال ارسال‌شده<b>203</b></div>
       <div class="stat">BUY<b style="color:#16a34a">9</b></div>
       <div class="stat">SELL<b style="color:#dc2626">164</b></div>
-      <div class="stat">NEUTRAL<b style="color:#9ca3af">511</b></div>
+      <div class="stat">NEUTRAL<b style="color:#9ca3af">513</b></div>
     </div>
     <div class="table-wrap">
     <table>
@@ -998,7 +998,7 @@
     <h2>حجم دیتای ذخیره‌شده برای آموزش مدل</h2>
     <table>
       <tr><th>فایل (نماد_تایم‌فریم)</th><th>تعداد کندل ذخیره‌شده</th></tr>
-      <tr><td>BTC_USDT_1h</td><td>2161</td></tr><tr><td>ETH_USDT_1h</td><td>2161</td></tr>
+      <tr><td>BTC_USDT_1h</td><td>2167</td></tr><tr><td>ETH_USDT_1h</td><td>2167</td></tr>
     </table>
   </div>
 
@@ -1011,6 +1011,30 @@
         <th>Confidence</th><th>ML%</th><th>قیمت</th><th>ارسال شد؟</th><th>استراتژی</th><th>دلیل</th>
       </tr>
       
+        <tr>
+          <td>2026-11-10T02:41:48</td>
+          <td>ETH/USDT</td>
+          <td><span class="badge small" style="background:#6b7280">NEUTRAL</span></td>
+          <td>Ranging</td>
+          <td>0.0</td>
+          <td>None</td>
+          <td>2120.41</td>
+          <td>بله</td>
+          <td class="muted"></td>
+          <td class="muted">Confluence found but confidence only 56% (< 60% threshold).</td>
+        </tr>
+        <tr>
+          <td>2026-11-10T02:41:46</td>
+          <td>BTC/USDT</td>
+          <td><span class="badge small" style="background:#6b7280">NEUTRAL</span></td>
+          <td>Ranging</td>
+          <td>0.0</td>
+          <td>None</td>
+          <td>74801.7</td>
+          <td>-</td>
+          <td class="muted"></td>
+          <td class="muted">No strategy found a valid setup on this bar.</td>
+        </tr>
         <tr>
           <td>2026-11-09T20:04:03</td>
           <td>ETH/USDT</td>
@@ -3387,30 +3411,6 @@
           <td class="muted"></td>
           <td class="muted">No strategy found a valid setup on this bar.</td>
         </tr>
-        <tr>
-          <td>2026-10-20T23:10:39</td>
-          <td>ETH/USDT</td>
-          <td><span class="badge small" style="background:#6b7280">NEUTRAL</span></td>
-          <td>Ranging</td>
-          <td>0.0</td>
-          <td>None</td>
-          <td>2449.82</td>
-          <td>-</td>
-          <td class="muted"></td>
-          <td class="muted">No strategy found a valid setup on this bar.</td>
-        </tr>
-        <tr>
-          <td>2026-10-20T23:10:38</td>
-          <td>BTC/USDT</td>
-          <td><span class="badge small" style="background:#6b7280">NEUTRAL</span></td>
-          <td>Ranging</td>
-          <td>0.0</td>
-          <td>None</td>
-          <td>82966.6</td>
-          <td>-</td>
-          <td class="muted"></td>
-          <td class="muted">No strategy found a valid setup on this bar.</td>
-        </tr>
     </table>
     </div>
   </div>
@@ -3419,10 +3419,10 @@
   new Chart(document.getElementById('confChart'), {
     type: 'line',
     data: {
-      labels: ["2026-11-02T18:22", "2026-11-02T18:22", "2026-11-03T01:05", "2026-11-03T01:05", "2026-11-03T07:52", "2026-11-03T07:52", "2026-11-03T15:31", "2026-11-03T15:31", "2026-11-03T21:15", "2026-11-03T21:15", "2026-11-04T01:20", "2026-11-04T01:20", "2026-11-04T07:37", "2026-11-04T07:37", "2026-11-04T15:44", "2026-11-04T15:44", "2026-11-04T21:30", "2026-11-04T21:30", "2026-11-05T01:39", "2026-11-05T01:39", "2026-11-05T08:29", "2026-11-05T08:29", "2026-11-05T16:39", "2026-11-05T16:39", "2026-11-05T22:15", "2026-11-05T22:15", "2026-11-06T02:36", "2026-11-06T02:36", "2026-11-06T09:50", "2026-11-06T09:50", "2026-11-06T16:59", "2026-11-06T16:59", "2026-11-06T21:55", "2026-11-06T21:55", "2026-11-07T01:21", "2026-11-07T01:21", "2026-11-07T07:22", "2026-11-07T07:22", "2026-11-07T14:13", "2026-11-07T14:13", "2026-11-07T18:45", "2026-11-07T18:45", "2026-11-07T22:24", "2026-11-07T22:24", "2026-11-08T01:34", "2026-11-08T01:34", "2026-11-08T07:57", "2026-11-08T07:57", "2026-11-08T14:38", "2026-11-08T14:38", "2026-11-08T19:06", "2026-11-08T19:06", "2026-11-08T22:50", "2026-11-08T22:50", "2026-11-09T02:08", "2026-11-09T02:08", "2026-11-09T09:41", "2026-11-09T09:41", "2026-11-09T20:04", "2026-11-09T20:04"],
+      labels: ["2026-11-03T01:05", "2026-11-03T01:05", "2026-11-03T07:52", "2026-11-03T07:52", "2026-11-03T15:31", "2026-11-03T15:31", "2026-11-03T21:15", "2026-11-03T21:15", "2026-11-04T01:20", "2026-11-04T01:20", "2026-11-04T07:37", "2026-11-04T07:37", "2026-11-04T15:44", "2026-11-04T15:44", "2026-11-04T21:30", "2026-11-04T21:30", "2026-11-05T01:39", "2026-11-05T01:39", "2026-11-05T08:29", "2026-11-05T08:29", "2026-11-05T16:39", "2026-11-05T16:39", "2026-11-05T22:15", "2026-11-05T22:15", "2026-11-06T02:36", "2026-11-06T02:36", "2026-11-06T09:50", "2026-11-06T09:50", "2026-11-06T16:59", "2026-11-06T16:59", "2026-11-06T21:55", "2026-11-06T21:55", "2026-11-07T01:21", "2026-11-07T01:21", "2026-11-07T07:22", "2026-11-07T07:22", "2026-11-07T14:13", "2026-11-07T14:13", "2026-11-07T18:45", "2026-11-07T18:45", "2026-11-07T22:24", "2026-11-07T22:24", "2026-11-08T01:34", "2026-11-08T01:34", "2026-11-08T07:57", "2026-11-08T07:57", "2026-11-08T14:38", "2026-11-08T14:38", "2026-11-08T19:06", "2026-11-08T19:06", "2026-11-08T22:50", "2026-11-08T22:50", "2026-11-09T02:08", "2026-11-09T02:08", "2026-11-09T09:41", "2026-11-09T09:41", "2026-11-09T20:04", "2026-11-09T20:04", "2026-11-10T02:41", "2026-11-10T02:41"],
       datasets: [{
         label: 'Confidence %',
-        data: [72.7, 63.0, 69.7, 63.9, 81.0, 64.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 62.6, 60.4, 60.8, 83.5, 84.8, 100.0, 0.0, 100.0, 0.0, 90.7, 84.8, 87.9, 89.4, 84.2, 86.8, 85.7, 86.4, 0.0, 0.0, 60.5, 0.0, 61.0, 0.0, 70.2, 62.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 72.3, 80.2, 100.0, 0.0, 77.4],
+        data: [69.7, 63.9, 81.0, 64.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 62.6, 60.4, 60.8, 83.5, 84.8, 100.0, 0.0, 100.0, 0.0, 90.7, 84.8, 87.9, 89.4, 84.2, 86.8, 85.7, 86.4, 0.0, 0.0, 60.5, 0.0, 61.0, 0.0, 70.2, 62.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 72.3, 80.2, 100.0, 0.0, 77.4, 0.0, 0.0],
         borderColor: '#3b82f6',
         backgroundColor: 'rgba(59,130,246,0.15)',
         tension: 0.25,

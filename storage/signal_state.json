@@ -1,46 +1,44 @@
 {
   "BTC/USDT::1h": {
-    "signal_id": "b8aea66b",
-    "timestamp": "2026-11-10T22:52:20.774928+00:00",
+    "signal_id": "321a5ca1",
+    "timestamp": "2026-11-11T09:37:58.648409+00:00",
     "asset": "BTC/USDT",
     "timeframe": "1h",
-    "regime": "Trending Bear",
-    "direction": "SELL",
-    "entry_low": 73795.5,
-    "entry_high": 74033.01162,
-    "stop_loss": 74575.633582,
-    "take_profit_1": 73015.366418,
-    "take_profit_2": 72235.232836,
-    "risk_reward": 1.0,
-    "confidence": 71.2,
-    "strategies": [
-      "Trend Following"
-    ],
-    "ml_probability": 19.9,
-    "llm_sentiment": "Bearish",
-    "reason": "[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21.",
-    "invalidation": "Close back above EMA50 (74534.036412) or ADX dropping under 18."
+    "regime": "Ranging",
+    "direction": "NEUTRAL",
+    "entry_low": null,
+    "entry_high": null,
+    "stop_loss": null,
+    "take_profit_1": null,
+    "take_profit_2": null,
+    "risk_reward": null,
+    "confidence": 0.0,
+    "strategies": [],
+    "ml_probability": null,
+    "llm_sentiment": "Neutral",
+    "reason": "No strategy found a valid setup on this bar.",
+    "invalidation": ""
   },
   "ETH/USDT::1h": {
-    "signal_id": "9904bc77",
-    "timestamp": "2026-11-10T22:52:21.754959+00:00",
+    "signal_id": "919cb502",
+    "timestamp": "2026-11-11T09:37:59.446455+00:00",
     "asset": "ETH/USDT",
     "timeframe": "1h",
     "regime": "Trending Bear",
     "direction": "SELL",
-    "entry_low": 2051.12,
-    "entry_high": 2074.91594,
-    "stop_loss": 2112.733627,
-    "take_profit_1": 2020.000968,
-    "take_profit_2": 1988.881936,
-    "risk_reward": 0.51,
-    "confidence": 95.1,
+    "entry_low": 2052.66,
+    "entry_high": 2064.601716,
+    "stop_loss": 2093.499884,
+    "take_profit_1": 2027.975659,
+    "take_profit_2": 2003.291317,
+    "risk_reward": 0.6,
+    "confidence": 84.8,
     "strategies": [
       "Trend Following"
     ],
-    "ml_probability": 28.3,
+    "ml_probability": 23.8,
     "llm_sentiment": "Bearish",
     "reason": "[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21.",
-    "invalidation": "Close back above EMA50 (2112.733627) or ADX dropping under 18."
+    "invalidation": "Close back above EMA50 (2093.499884) or ADX dropping under 18."
   }
 }

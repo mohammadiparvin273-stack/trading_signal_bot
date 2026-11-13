@@ -1391,9 +1391,9 @@
     "timeframe": "1h",
     "direction": "SELL",
     "entry_ref": 72966.1,
-    "stop_loss": 72969.713483,
-    "take_profit_1": 70202.193951,
-    "take_profit_2": 69553.887903,
+    "stop_loss": 72111.432741,
+    "take_profit_1": 67696.822409,
+    "take_profit_2": 66701.044818,
     "confidence": 72.7,
     "strategies": [
       "Trend Following",
@@ -1401,11 +1401,11 @@
     ],
     "ml_probability": 27.5,
     "opened_at": "2026-11-12T12:37:15.108584+00:00",
-    "bars_open": 13,
-    "status": "OPEN",
-    "closed_at": null,
-    "exit_price": null,
-    "pnl_pct": null
+    "bars_open": 19,
+    "status": "SL_HIT",
+    "closed_at": "2026-11-12T13:00:00+00:00",
+    "exit_price": 72111.432741,
+    "pnl_pct": 1.171
   },
   "581b1e6d": {
     "signal_id": "581b1e6d",
@@ -1413,19 +1413,19 @@
     "timeframe": "1h",
     "direction": "SELL",
     "entry_ref": 2020.75,
-    "stop_loss": 2045.893989,
-    "take_profit_1": 1986.335559,
-    "take_profit_2": 1965.071118,
+    "stop_loss": 2023.222088,
+    "take_profit_1": 1904.567988,
+    "take_profit_2": 1872.655976,
     "confidence": 87.3,
     "strategies": [
       "Trend Following"
     ],
     "ml_probability": 15.0,
     "opened_at": "2026-11-12T20:25:28.722235+00:00",
-    "bars_open": 5,
-    "status": "OPEN",
-    "closed_at": null,
-    "exit_price": null,
-    "pnl_pct": null
+    "bars_open": 11,
+    "status": "TP1_HIT",
+    "closed_at": "2026-11-13T05:00:00+00:00",
+    "exit_price": 1904.567988,
+    "pnl_pct": 5.749
   }
 }

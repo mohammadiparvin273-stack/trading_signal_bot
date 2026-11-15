@@ -1,46 +1,46 @@
 {
   "BTC/USDT::1h": {
-    "signal_id": "8c1ed5f5",
-    "timestamp": "2026-11-14T23:23:52.458275+00:00",
+    "signal_id": "45b3582f",
+    "timestamp": "2026-11-15T02:53:00.345360+00:00",
     "asset": "BTC/USDT",
     "timeframe": "1h",
     "regime": "Trending Bear",
     "direction": "SELL",
-    "entry_low": 63886.9,
-    "entry_high": 66003.470213,
-    "stop_loss": 67800.60321,
-    "take_profit_1": 62887.948254,
-    "take_profit_2": 61888.996508,
-    "risk_reward": 0.26,
-    "confidence": 98.6,
-    "strategies": [
-      "Trend Following"
-    ],
-    "ml_probability": 18.4,
-    "llm_sentiment": "Bearish",
-    "reason": "[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21.",
-    "invalidation": "Close back above EMA50 (67800.603210) or ADX dropping under 18."
-  },
-  "ETH/USDT::1h": {
-    "signal_id": "0dd05f0b",
-    "timestamp": "2026-11-14T23:23:54.384076+00:00",
-    "asset": "ETH/USDT",
-    "timeframe": "1h",
-    "regime": "Trending Bear",
-    "direction": "SELL",
-    "entry_low": 1752.97,
-    "entry_high": 1844.822189,
-    "stop_loss": 1902.889272,
-    "take_profit_1": 1715.038448,
-    "take_profit_2": 1677.106896,
-    "risk_reward": 0.25,
+    "entry_low": 64815.3,
+    "entry_high": 65427.555607,
+    "stop_loss": 67332.467433,
+    "take_profit_1": 63505.570231,
+    "take_profit_2": 62195.840462,
+    "risk_reward": 0.52,
     "confidence": 100.0,
     "strategies": [
       "Trend Following"
     ],
-    "ml_probability": 9.8,
+    "ml_probability": 3.3,
     "llm_sentiment": "Bearish",
     "reason": "[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21.",
-    "invalidation": "Close back above EMA50 (1902.889272) or ADX dropping under 18."
+    "invalidation": "Close back above EMA50 (67332.467433) or ADX dropping under 18."
+  },
+  "ETH/USDT::1h": {
+    "signal_id": "cc25ad2e",
+    "timestamp": "2026-11-15T02:53:01.175449+00:00",
+    "asset": "ETH/USDT",
+    "timeframe": "1h",
+    "regime": "Trending Bear",
+    "direction": "SELL",
+    "entry_low": 1815.55,
+    "entry_high": 1825.026476,
+    "stop_loss": 1887.160898,
+    "take_profit_1": 1768.965002,
+    "take_profit_2": 1722.380004,
+    "risk_reward": 0.65,
+    "confidence": 99.3,
+    "strategies": [
+      "Trend Following"
+    ],
+    "ml_probability": 16.3,
+    "llm_sentiment": "Bearish",
+    "reason": "[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21.",
+    "invalidation": "Close back above EMA50 (1887.160898) or ADX dropping under 18."
   }
 }

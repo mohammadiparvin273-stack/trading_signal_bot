@@ -1,46 +1,44 @@
 {
   "BTC/USDT::1h": {
-    "signal_id": "298af399",
-    "timestamp": "2026-11-15T16:50:18.280955+00:00",
+    "signal_id": "ced451d2",
+    "timestamp": "2026-11-15T21:23:26.096791+00:00",
     "asset": "BTC/USDT",
-    "timeframe": "1h",
-    "regime": "Trending Bear",
-    "direction": "SELL",
-    "entry_low": 64562.0,
-    "entry_high": 65089.698322,
-    "stop_loss": 66314.85685,
-    "take_profit_1": 63527.666509,
-    "take_profit_2": 62493.333018,
-    "risk_reward": 0.59,
-    "confidence": 77.5,
-    "strategies": [
-      "Trend Following"
-    ],
-    "ml_probability": 7.0,
-    "llm_sentiment": "Bearish",
-    "reason": "[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21.",
-    "invalidation": "Close back above EMA50 (66314.856850) or ADX dropping under 18."
-  },
-  "ETH/USDT::1h": {
-    "signal_id": "a1c9cd59",
-    "timestamp": "2026-11-15T16:50:19.468300+00:00",
-    "asset": "ETH/USDT",
     "timeframe": "1h",
     "regime": "Ranging",
     "direction": "SELL",
-    "entry_low": 1809.25,
-    "entry_high": 1817.185404,
-    "stop_loss": 1855.636657,
-    "take_profit_1": 1773.378401,
-    "take_profit_2": 1737.506803,
-    "risk_reward": 0.77,
-    "confidence": 65.1,
+    "entry_low": 64933.9,
+    "entry_high": 65010.853476,
+    "stop_loss": 66052.761693,
+    "take_profit_1": 64030.203064,
+    "take_profit_2": 63126.506127,
+    "risk_reward": 0.81,
+    "confidence": 60.8,
     "strategies": [
       "Trend Following"
     ],
-    "ml_probability": 14.0,
+    "ml_probability": 16.2,
     "llm_sentiment": "Bearish",
     "reason": "[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21.",
-    "invalidation": "Close back above EMA50 (1855.636657) or ADX dropping under 18."
+    "invalidation": "Close back above EMA50 (66052.761693) or ADX dropping under 18."
+  },
+  "ETH/USDT::1h": {
+    "signal_id": "f9fd213b",
+    "timestamp": "2026-11-15T21:23:26.735038+00:00",
+    "asset": "ETH/USDT",
+    "timeframe": "1h",
+    "regime": "Ranging",
+    "direction": "NEUTRAL",
+    "entry_low": null,
+    "entry_high": null,
+    "stop_loss": null,
+    "take_profit_1": null,
+    "take_profit_2": null,
+    "risk_reward": null,
+    "confidence": 0.0,
+    "strategies": [],
+    "ml_probability": null,
+    "llm_sentiment": "Neutral",
+    "reason": "No strategy found a valid setup on this bar.",
+    "invalidation": ""
   }
 }

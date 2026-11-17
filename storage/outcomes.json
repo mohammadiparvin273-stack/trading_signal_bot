@@ -1443,11 +1443,11 @@
     ],
     "ml_probability": 7.0,
     "opened_at": "2026-11-15T16:50:18.280955+00:00",
-    "bars_open": 41,
-    "status": "OPEN",
-    "closed_at": null,
-    "exit_price": null,
-    "pnl_pct": null
+    "bars_open": 50,
+    "status": "TP1_HIT",
+    "closed_at": "2026-11-17T15:00:00+00:00",
+    "exit_price": 63527.666509,
+    "pnl_pct": 1.602
   },
   "a1c9cd59": {
     "signal_id": "a1c9cd59",

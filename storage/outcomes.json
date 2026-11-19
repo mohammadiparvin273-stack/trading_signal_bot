@@ -1485,11 +1485,11 @@
     ],
     "ml_probability": 38.1,
     "opened_at": "2026-11-18T17:26:50.394434+00:00",
-    "bars_open": 11,
-    "status": "OPEN",
-    "closed_at": null,
-    "exit_price": null,
-    "pnl_pct": null
+    "bars_open": 20,
+    "status": "SL_HIT",
+    "closed_at": "2026-11-19T06:00:00+00:00",
+    "exit_price": 1806.431099,
+    "pnl_pct": -1.826
   },
   "babde158": {
     "signal_id": "babde158",
@@ -1506,10 +1506,10 @@
     ],
     "ml_probability": 11.2,
     "opened_at": "2026-11-18T23:28:22.495805+00:00",
-    "bars_open": 5,
-    "status": "OPEN",
-    "closed_at": null,
-    "exit_price": null,
-    "pnl_pct": null
+    "bars_open": 14,
+    "status": "SL_HIT",
+    "closed_at": "2026-11-19T11:00:00+00:00",
+    "exit_price": 64048.608331,
+    "pnl_pct": -2.097
   }
 }

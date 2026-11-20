@@ -1,46 +1,47 @@
 {
   "BTC/USDT::1h": {
-    "signal_id": "f8863b16",
-    "timestamp": "2026-11-19T21:48:01.645439+00:00",
+    "signal_id": "15396dfb",
+    "timestamp": "2026-11-20T02:42:39.719723+00:00",
     "asset": "BTC/USDT",
     "timeframe": "1h",
     "regime": "Trending Bear",
     "direction": "SELL",
-    "entry_low": 61603.3,
-    "entry_high": 61766.1,
-    "stop_loss": 62334.092317,
-    "take_profit_1": 60467.315366,
-    "take_profit_2": 59331.330732,
-    "risk_reward": 1.55,
-    "confidence": 94.5,
+    "entry_low": 61717.4,
+    "entry_high": 62583.198263,
+    "stop_loss": 63204.754009,
+    "take_profit_1": 60804.680019,
+    "take_profit_2": 59891.960038,
+    "risk_reward": 0.61,
+    "confidence": 100.0,
     "strategies": [
-      "Trend Following",
-      "Momentum",
-      "Breakout"
+      "Trend Following"
     ],
-    "ml_probability": 30.3,
+    "ml_probability": 4.6,
     "llm_sentiment": "Bearish",
-    "reason": "[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21. | [Momentum] RSI at 26.4 (strong bearish zone) with falling negative MACD histogram \u2014 downside momentum building. | [Breakout] Price broke below the 20-bar Donchian low (61766.100000) with above-average volume and expanding volatility bands.",
-    "invalidation": "Close back above the breakdown level (61766.100000)."
+    "reason": "[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21.",
+    "invalidation": "Close back above EMA50 (63204.754009) or ADX dropping under 18."
   },
   "ETH/USDT::1h": {
-    "signal_id": "d8cc4cb9",
-    "timestamp": "2026-11-19T04:20:27.917868+00:00",
+    "signal_id": "49bc1403",
+    "timestamp": "2026-11-20T02:42:40.824329+00:00",
     "asset": "ETH/USDT",
     "timeframe": "1h",
-    "regime": "Ranging",
-    "direction": "NEUTRAL",
-    "entry_low": null,
-    "entry_high": null,
-    "stop_loss": null,
-    "take_profit_1": null,
-    "take_profit_2": null,
-    "risk_reward": null,
-    "confidence": 0.0,
-    "strategies": [],
-    "ml_probability": null,
-    "llm_sentiment": "Neutral",
-    "reason": "No strategy found a valid setup on this bar.",
-    "invalidation": ""
+    "regime": "Trending Bear",
+    "direction": "SELL",
+    "entry_low": 1736.93,
+    "entry_high": 1768.244171,
+    "stop_loss": 1782.6587,
+    "take_profit_1": 1707.949691,
+    "take_profit_2": 1678.969382,
+    "risk_reward": 0.63,
+    "confidence": 78.6,
+    "strategies": [
+      "Trend Following",
+      "Momentum"
+    ],
+    "ml_probability": 24.1,
+    "llm_sentiment": "Bearish",
+    "reason": "[Trend Following] EMA stack aligned bearish (9<21<50<200) with ADX confirming trend strength; price holding below EMA21. | [Momentum] RSI at 34.8 (strong bearish zone) with falling negative MACD histogram \u2014 downside momentum building.",
+    "invalidation": "Close back above EMA50 (1782.658700) or ADX dropping under 18."
   }
 }
